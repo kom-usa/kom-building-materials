@@ -20,12 +20,16 @@ export default function ContactPage() {
     e.preventDefault();
     setStatus("submitting");
     try {
-      await fetch("/", {
+      const res = await fetch("/netlify-forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({ "form-name": "contact", ...fields }).toString(),
       });
-      setStatus("success");
+      if (res.ok) {
+        setStatus("success");
+      } else {
+        setStatus("error");
+      }
     } catch {
       setStatus("error");
     }
