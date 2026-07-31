@@ -1,0 +1,62 @@
+[
+  {
+    "sku": "LVP-001",
+    "category": "lvp-flooring",
+    "name": "Coastal Oak 6mm LVP",
+    "manufacturer": "COREtec",
+    "description": "100% waterproof luxury vinyl plank with realistic wood grain texture. Attached underlayment included. Click-lock installation — no glue required. Perfect for kitchens, bathrooms, and basements.",
+    "dimensions": "6\" x 48\" planks — 6mm total / 12mil wear layer",
+    "image": "/images/lvp/coastal-oak-6mm.jpg",
+    "price": 2.89,
+    "priceUnit": "per-sqft",
+    "status": "in-stock",
+    "leadTime": "In stock — take home today",
+    "notes": "Covers approx. 20 sq ft per box. Order 10% extra for cuts and waste.",
+    "featured": true
+  },
+  {
+    "sku": "LVP-002",
+    "category": "lvp-flooring",
+    "name": "Driftwood Gray 8mm LVP",
+    "manufacturer": "Shaw Floors",
+    "description": "Contemporary cool-gray tone with subtle wood texture. Extra thick 8mm core for added sound absorption. 20mil commercial-grade wear layer resists scratches from pets and high-heel shoes.",
+    "dimensions": "7\" x 48\" planks — 8mm total / 20mil wear layer",
+    "image": "/images/lvp/driftwood-gray-8mm.jpg",
+    "price": 3.49,
+    "priceUnit": "per-sqft",
+    "status": "in-stock",
+    "leadTime": "In stock — take home today",
+    "notes": "Ideal for rental properties and high-traffic areas. Backed by lifetime residential warranty.",
+    "featured": true
+  },
+  {
+    "sku": "LVP-003",
+    "category": "lvp-flooring",
+    "name": "Natural Hickory 12mm LVP",
+    "manufacturer": "COREtec Plus",
+    "description": "Premium thick-plank LVP with dramatic hickory grain variation. Rigid core construction handles minor subfloor imperfections without transition strips in most rooms.",
+    "dimensions": "7\" x 72\" planks — 12mm total / 20mil wear layer",
+    "image": "/images/lvp/natural-hickory-12mm.jpg",
+    "price": 4.29,
+    "priceUnit": "per-sqft",
+    "status": "in-stock",
+    "leadTime": "In stock — take home today",
+    "notes": "Longer plank format (72\") creates a more premium look. Great for open-plan spaces.",
+    "featured": true
+  },
+  {
+    "sku": "LVP-004",
+    "category": "lvp-flooring",
+    "name": "Whitewash Pine Wide Plank LVP",
+    "manufacturer": "LifeProof",
+    "description": "Farmhouse-inspired whitewashed finish with wide 9\" planks. Fully waterproof, pet-proof, and kid-proof. The 12mil wear layer handles everyday wear in busy homes.",
+    "dimensions": "9\" x 60\" planks — 5mm total / 12mil wear layer",
+    "image": "/images/lvp/whitewash-pine-wide.jpg",
+    "price": 3.19,
+    "priceUnit": "per-sqft",
+    "status": "special-order",
+    "leadTime": "Special order — 1–2 weeks",
+    "notes": "Wide plank formats look best in larger rooms. Ask us about sample before ordering.",
+    "featured": false
+  }
+]

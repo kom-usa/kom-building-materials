@@ -1,0 +1,62 @@
+[
+  {
+    "sku": "HWD-001",
+    "category": "hardwood-flooring",
+    "name": "Red Oak Natural 3/4\" Solid",
+    "manufacturer": "Bruce Flooring",
+    "description": "Classic 3/4\" solid red oak — the most popular hardwood in America. Can be sanded and refinished multiple times over its lifetime. Install in dry areas only; not recommended for basements or bathrooms.",
+    "dimensions": "3.25\" wide — 3/4\" thick — random lengths",
+    "image": "/images/hardwood/red-oak-natural-solid.jpg",
+    "price": 4.99,
+    "priceUnit": "per-sqft",
+    "status": "in-stock",
+    "leadTime": "In stock — take home today",
+    "notes": "Requires acclimation 48–72 hrs before installation. Nail-down or glue-down only.",
+    "featured": true
+  },
+  {
+    "sku": "HWD-002",
+    "category": "hardwood-flooring",
+    "name": "White Oak Engineered 1/2\"",
+    "manufacturer": "Mullican Flooring",
+    "description": "White oak's cooler, straighter grain is the designer's choice. Engineered 1/2\" construction handles humidity swings better than solid wood — suitable over radiant heat and on grade in dry climates.",
+    "dimensions": "5\" wide — 1/2\" thick — random lengths",
+    "image": "/images/hardwood/white-oak-engineered.jpg",
+    "price": 6.49,
+    "priceUnit": "per-sqft",
+    "status": "in-stock",
+    "leadTime": "In stock — take home today",
+    "notes": "Can be floated, stapled, or glued. Compatible with most radiant heat systems under 85°F.",
+    "featured": true
+  },
+  {
+    "sku": "HWD-003",
+    "category": "hardwood-flooring",
+    "name": "Hickory Wire-Brushed Engineered",
+    "manufacturer": "Somerset Hardwood",
+    "description": "Wire-brushed surface brings out the natural character and dramatic grain variation of hickory. The textured finish hides everyday scratches and is easier to maintain than a smooth surface.",
+    "dimensions": "5\" wide — 3/8\" thick — random lengths",
+    "image": "/images/hardwood/hickory-wire-brushed.jpg",
+    "price": 5.89,
+    "priceUnit": "per-sqft",
+    "status": "special-order",
+    "leadTime": "Special order — 2–3 weeks",
+    "notes": "Wire-brushed texture is very forgiving — great choice for homes with dogs or active kids.",
+    "featured": true
+  },
+  {
+    "sku": "HWD-004",
+    "category": "hardwood-flooring",
+    "name": "Brazilian Cherry (Jatoba) Solid 3/4\"",
+    "manufacturer": "IndusParquet",
+    "description": "One of the hardest, most exotic hardwoods available. Rich reddish-brown color deepens over time with light exposure. Exceptional durability — outlasts most domestic species.",
+    "dimensions": "3.25\" wide — 3/4\" thick — random lengths",
+    "image": "/images/hardwood/brazilian-cherry-solid.jpg",
+    "price": 7.99,
+    "priceUnit": "per-sqft",
+    "status": "special-order",
+    "leadTime": "Special order — 3–4 weeks",
+    "notes": "Color will darken significantly in the first 6 months. Use window coverings to control UV exposure during this period.",
+    "featured": false
+  }
+]

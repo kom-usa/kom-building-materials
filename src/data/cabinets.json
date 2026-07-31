@@ -1,0 +1,62 @@
+[
+  {
+    "sku": "CAB-001",
+    "category": "cabinets",
+    "name": "Shaker White Base Cabinet 30\"",
+    "manufacturer": "Forevermark Cabinetry",
+    "description": "Classic shaker-style base cabinet with soft-close hinges, dovetail drawer construction, and ¾\" plywood box. Full-extension drawer glides included.",
+    "dimensions": "30\"W x 34.5\"H x 24\"D",
+    "image": "/images/cabinets/shaker-white-base-30.jpg",
+    "price": 289,
+    "priceUnit": "per-unit",
+    "status": "in-stock",
+    "leadTime": "In stock — available same week",
+    "notes": "Available in 9\", 12\", 15\", 18\", 21\", 24\", 27\", 30\", 33\", 36\" widths",
+    "featured": true
+  },
+  {
+    "sku": "CAB-002",
+    "category": "cabinets",
+    "name": "Shaker White Wall Cabinet 30\"x30\"",
+    "manufacturer": "Forevermark Cabinetry",
+    "description": "Upper wall cabinet matching the Shaker White series. Adjustable shelving, soft-close doors, ¾\" plywood construction.",
+    "dimensions": "30\"W x 30\"H x 12\"D",
+    "image": "/images/cabinets/shaker-white-wall-30x30.jpg",
+    "price": 219,
+    "priceUnit": "per-unit",
+    "status": "in-stock",
+    "leadTime": "In stock — available same week",
+    "notes": "Also available in 36\" height for taller ceilings",
+    "featured": true
+  },
+  {
+    "sku": "CAB-003",
+    "category": "cabinets",
+    "name": "Espresso Java Base Cabinet 30\"",
+    "manufacturer": "Forevermark Cabinetry",
+    "description": "Rich espresso finish with the same quality construction — soft-close hinges, dovetail drawers, plywood box. Pairs well with quartz or granite countertops.",
+    "dimensions": "30\"W x 34.5\"H x 24\"D",
+    "image": "/images/cabinets/espresso-java-base-30.jpg",
+    "price": 309,
+    "priceUnit": "per-unit",
+    "status": "in-stock",
+    "leadTime": "In stock — available same week",
+    "notes": "Dark finish shows fingerprints less than lighter finishes",
+    "featured": false
+  },
+  {
+    "sku": "CAB-004",
+    "category": "cabinets",
+    "name": "Gray Shaker Base Cabinet 30\"",
+    "manufacturer": "Forevermark Cabinetry",
+    "description": "Modern warm gray finish on classic shaker style. Full-extension soft-close drawers, ¾\" plywood box, dovetail construction.",
+    "dimensions": "30\"W x 34.5\"H x 24\"D",
+    "image": "/images/cabinets/gray-shaker-base-30.jpg",
+    "price": 299,
+    "priceUnit": "per-unit",
+    "status": "in-stock",
+    "leadTime": "In stock — available same week",
+    "notes": "One of our most requested colors — pairs well with white quartz",
+    "featured": true
+  }
+]
