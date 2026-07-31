@@ -14,15 +14,16 @@ const navLinks = [
   { label: "Contact", href: "/contact" },
 ];
 
-export default function Header() {
+export default function Header({ announcement }: { announcement?: string }) {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const announcementText = announcement || "Flat-Rate Delivery • Local Pickup Available • Pallet Pricing Available";
 
   return (
     <header className="sticky top-0 z-50">
       {/* Announcement bar */}
       <div className="bg-white text-center text-xs py-2 px-4 text-[var(--color-text)] border-b border-gray-100">
-        Flat-Rate Delivery&nbsp;•&nbsp;Local Pickup Available&nbsp;•&nbsp;Pallet Pricing Available
+        {announcementText}
       </div>
 
       {/* Main nav */}

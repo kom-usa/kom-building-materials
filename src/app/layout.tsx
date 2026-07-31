@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { getSiteSettings } from "@/sanity/lib/queries";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,15 +20,17 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://screwthemiddleman.com"),
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const settings = await getSiteSettings();
+
   return (
     <html lang="en" className={`${geistSans.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased bg-[var(--color-background)]">
-        <Header />
+        <Header announcement={settings?.announcementBar} />
         <main className="flex-1">{children}</main>
         <Footer />
       </body>
