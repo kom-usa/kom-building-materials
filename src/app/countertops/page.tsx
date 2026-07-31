@@ -35,9 +35,9 @@ export default function CountertopsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[var(--color-brand-navy)] text-white py-14 px-4">
+      <section className="bg-[var(--color-brand-green)] text-white py-14 px-4">
         <div className="mx-auto max-w-4xl">
-          <p className="text-sm text-[var(--color-brand-gold)] font-medium mb-2">Products</p>
+          <p className="text-sm text-[var(--color-brand-dark)] font-semibold mb-2">Products</p>
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Countertops</h1>
           <p className="mt-4 text-white/80 text-base leading-relaxed max-w-2xl">
             Quartz, granite, and butcher block — fabricated to your exact kitchen dimensions.
@@ -46,7 +46,7 @@ export default function CountertopsPage() {
           </p>
           <Link
             href="/project-builder"
-            className="mt-6 inline-block rounded bg-[var(--color-brand-gold)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--color-brand-gold-dark)] transition-colors"
+            className="mt-6 inline-block rounded bg-[var(--color-brand-dark)] px-6 py-3 text-sm font-semibold text-white hover:bg-black transition-colors"
           >
             Add to Project Builder →
           </Link>
@@ -60,9 +60,9 @@ export default function CountertopsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {materialGuide.map((m) => (
               <div key={m.material} className="border border-gray-100 rounded-lg p-5">
-                <h3 className="font-semibold text-[var(--color-brand-navy)]">{m.material}</h3>
+                <h3 className="font-semibold text-[var(--color-brand-green)]">{m.material}</h3>
                 <p className="mt-2 text-sm text-[var(--color-muted)] leading-relaxed">{m.summary}</p>
-                <p className="mt-2 text-xs font-medium text-[var(--color-brand-gold)]">{m.best}</p>
+                <p className="mt-2 text-xs font-medium text-[var(--color-brand-green)]">{m.best}</p>
               </div>
             ))}
           </div>
@@ -87,7 +87,7 @@ export default function CountertopsPage() {
                     {product.description}
                   </p>
                   <div className="mt-4 flex items-center justify-between">
-                    <span className="text-lg font-bold text-[var(--color-brand-navy)]">
+                    <span className="text-lg font-bold text-[var(--color-brand-green)]">
                       ${product.price}
                       <span className="text-xs font-normal text-[var(--color-muted)] ml-1">{product.priceUnit.replace("-", " ")}</span>
                     </span>
@@ -115,7 +115,7 @@ export default function CountertopsPage() {
             Bring your kitchen measurements and we&apos;ll give you an accurate quote. Natural stone slabs are available to view in person.
           </p>
           <div className="mt-5 flex flex-col sm:flex-row gap-3 justify-center">
-            <Link href="/project-builder" className="rounded bg-[var(--color-brand-gold)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--color-brand-gold-dark)] transition-colors">
+            <Link href="/project-builder" className="rounded bg-[var(--color-brand-green)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--color-brand-green-dark)] transition-colors">
               Build Your Project
             </Link>
             <Link href="/contact" className="rounded border border-gray-200 px-6 py-3 text-sm font-semibold text-[var(--color-text)] hover:bg-gray-50 transition-colors">

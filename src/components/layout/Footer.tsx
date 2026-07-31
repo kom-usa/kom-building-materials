@@ -16,19 +16,19 @@ const company = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--color-brand-navy)] text-white/80 mt-auto">
+    <footer className="bg-[var(--color-brand-dark)] text-white/80 mt-auto">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <p className="text-white font-bold text-lg tracking-tight">
-              <span className="text-[var(--color-brand-gold)]">KOM</span> Building Materials
+            <p className="text-white font-black text-xl tracking-tight">
+              <span className="text-[var(--color-brand-green)]">KOM</span> Building Materials
             </p>
             <p className="mt-3 text-sm leading-relaxed max-w-xs">
               An online showroom backed by a physical location in Redford Township.
               Professional guidance, premium products, competitive prices.
             </p>
-            <p className="mt-3 text-xs font-medium text-[var(--color-brand-gold)]">
+            <p className="mt-3 text-xs font-medium text-[var(--color-brand-green)]">
               Service-Disabled Veteran-Owned Small Business (SDVOSB)
             </p>
           </div>
@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-white/10 pt-6 text-xs text-white/50">
+        <div className="mt-10 border-t border-white/10 pt-6 text-xs text-white/40">
           © {new Date().getFullYear()} KOM Building Materials. All rights reserved.
         </div>
       </div>

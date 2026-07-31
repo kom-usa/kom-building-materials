@@ -11,9 +11,9 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[var(--color-brand-navy)] text-white py-14 px-4">
+      <section className="bg-[var(--color-brand-green)] text-white py-14 px-4">
         <div className="mx-auto max-w-4xl">
-          <p className="text-sm text-[var(--color-brand-gold)] font-medium mb-2">About</p>
+          <p className="text-sm text-[var(--color-brand-dark)] font-semibold mb-2">About</p>
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Built on Honest Business</h1>
           <p className="mt-4 text-white/80 text-base leading-relaxed max-w-2xl">
             KOM Building Materials is a Service-Disabled Veteran-Owned Small Business (SDVOSB) based in
@@ -56,7 +56,7 @@ export default function AboutPage() {
               { heading: "Quality Products", body: "We only carry products we&apos;d put in our own homes — from manufacturers with real warranties and real quality control." },
             ].map((v) => (
               <div key={v.heading}>
-                <h3 className="font-semibold text-[var(--color-brand-navy)]">{v.heading}</h3>
+                <h3 className="font-semibold text-[var(--color-brand-green)]">{v.heading}</h3>
                 <p className="mt-2 text-sm text-[var(--color-muted)] leading-relaxed">{v.body}</p>
               </div>
             ))}
@@ -71,14 +71,14 @@ export default function AboutPage() {
           <address className="not-italic mt-3 text-sm text-[var(--color-muted)] space-y-1">
             <p>15497 Beech Daly Road, Redford Township, MI 48239</p>
             <p>
-              <a href="tel:+13135591888" className="hover:text-[var(--color-brand-navy)] transition-colors">(313) 559-1888</a>
+              <a href="tel:+13135591888" className="hover:text-[var(--color-brand-green)] transition-colors">(313) 559-1888</a>
             </p>
             <p>
-              <a href="mailto:Jordan@KOM-USA.com" className="hover:text-[var(--color-brand-navy)] transition-colors">Jordan@KOM-USA.com</a>
+              <a href="mailto:Jordan@KOM-USA.com" className="hover:text-[var(--color-brand-green)] transition-colors">Jordan@KOM-USA.com</a>
             </p>
           </address>
           <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
-            <Link href="/contact" className="rounded bg-[var(--color-brand-gold)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--color-brand-gold-dark)] transition-colors">
+            <Link href="/contact" className="rounded bg-[var(--color-brand-green)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--color-brand-green-dark)] transition-colors">
               Get in Touch
             </Link>
             <Link href="/project-builder" className="rounded border border-gray-200 px-6 py-3 text-sm font-semibold text-[var(--color-text)] hover:bg-gray-50 transition-colors">

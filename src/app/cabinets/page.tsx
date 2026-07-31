@@ -24,9 +24,9 @@ export default function CabinetsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[var(--color-brand-navy)] text-white py-14 px-4">
+      <section className="bg-[var(--color-brand-green)] text-white py-14 px-4">
         <div className="mx-auto max-w-4xl">
-          <p className="text-sm text-[var(--color-brand-gold)] font-medium mb-2">Products</p>
+          <p className="text-sm text-[var(--color-brand-dark)] font-semibold mb-2">Products</p>
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Kitchen Cabinets</h1>
           <p className="mt-4 text-white/80 text-base leading-relaxed max-w-2xl">
             Our cabinet collection covers the most popular styles — shaker, raised-panel, and modern flat-front.
@@ -35,7 +35,7 @@ export default function CabinetsPage() {
           </p>
           <Link
             href="/project-builder"
-            className="mt-6 inline-block rounded bg-[var(--color-brand-gold)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--color-brand-gold-dark)] transition-colors"
+            className="mt-6 inline-block rounded bg-[var(--color-brand-dark)] px-6 py-3 text-sm font-semibold text-white hover:bg-black transition-colors"
           >
             Add to Project Builder →
           </Link>
@@ -47,7 +47,7 @@ export default function CabinetsPage() {
         <div className="mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((f) => (
             <div key={f.heading}>
-              <h3 className="font-semibold text-[var(--color-brand-navy)] text-sm">{f.heading}</h3>
+              <h3 className="font-semibold text-[var(--color-brand-green)] text-sm">{f.heading}</h3>
               <p className="mt-1 text-sm text-[var(--color-muted)] leading-relaxed">{f.body}</p>
             </div>
           ))}
@@ -72,7 +72,7 @@ export default function CabinetsPage() {
                     {product.description}
                   </p>
                   <div className="mt-4 flex items-center justify-between">
-                    <span className="text-lg font-bold text-[var(--color-brand-navy)]">
+                    <span className="text-lg font-bold text-[var(--color-brand-green)]">
                       ${product.price.toLocaleString()}
                       <span className="text-xs font-normal text-[var(--color-muted)] ml-1">{product.priceUnit.replace("-", " ")}</span>
                     </span>
@@ -100,7 +100,7 @@ export default function CabinetsPage() {
             Visit our Redford Township showroom to see samples in person, or contact us and we&apos;ll walk you through the options.
           </p>
           <div className="mt-5 flex flex-col sm:flex-row gap-3 justify-center">
-            <Link href="/project-builder" className="rounded bg-[var(--color-brand-gold)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--color-brand-gold-dark)] transition-colors">
+            <Link href="/project-builder" className="rounded bg-[var(--color-brand-green)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--color-brand-green-dark)] transition-colors">
               Build Your Project
             </Link>
             <Link href="/contact" className="rounded border border-gray-200 px-6 py-3 text-sm font-semibold text-[var(--color-text)] hover:bg-gray-50 transition-colors">

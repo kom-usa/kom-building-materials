@@ -34,9 +34,9 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[var(--color-brand-navy)] text-white py-14 px-4">
+      <section className="bg-[var(--color-brand-green)] text-white py-14 px-4">
         <div className="mx-auto max-w-4xl">
-          <p className="text-sm text-[var(--color-brand-gold)] font-medium mb-2">Contact</p>
+          <p className="text-sm text-[var(--color-brand-dark)] font-semibold mb-2">Contact</p>
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Get in Touch</h1>
           <p className="mt-4 text-white/80 text-base leading-relaxed max-w-2xl">
             Reach us by phone, email, or stop by the showroom. Bring your measurements, photos, and
@@ -52,30 +52,30 @@ export default function ContactPage() {
             <h2 className="text-lg font-bold text-[var(--color-text)] mb-6">Showroom &amp; Contact</h2>
             <dl className="space-y-5 text-sm">
               <div>
-                <dt className="font-semibold text-[var(--color-brand-navy)]">Address</dt>
+                <dt className="font-semibold text-[var(--color-brand-green)]">Address</dt>
                 <dd className="mt-1 text-[var(--color-muted)]">
                   15497 Beech Daly Road<br />
                   Redford Township, MI 48239
                 </dd>
               </div>
               <div>
-                <dt className="font-semibold text-[var(--color-brand-navy)]">Phone</dt>
+                <dt className="font-semibold text-[var(--color-brand-green)]">Phone</dt>
                 <dd className="mt-1">
-                  <a href="tel:+13135591888" className="text-[var(--color-muted)] hover:text-[var(--color-brand-navy)] transition-colors">
+                  <a href="tel:+13135591888" className="text-[var(--color-muted)] hover:text-[var(--color-brand-green)] transition-colors">
                     (313) 559-1888
                   </a>
                 </dd>
               </div>
               <div>
-                <dt className="font-semibold text-[var(--color-brand-navy)]">Email</dt>
+                <dt className="font-semibold text-[var(--color-brand-green)]">Email</dt>
                 <dd className="mt-1">
-                  <a href="mailto:Jordan@KOM-USA.com" className="text-[var(--color-muted)] hover:text-[var(--color-brand-navy)] transition-colors">
+                  <a href="mailto:Jordan@KOM-USA.com" className="text-[var(--color-muted)] hover:text-[var(--color-brand-green)] transition-colors">
                     Jordan@KOM-USA.com
                   </a>
                 </dd>
               </div>
               <div>
-                <dt className="font-semibold text-[var(--color-brand-navy)]">Showroom Hours</dt>
+                <dt className="font-semibold text-[var(--color-brand-green)]">Showroom Hours</dt>
                 <dd className="mt-1 text-[var(--color-muted)]">
                   Mon–Fri: 9am – 6pm<br />
                   Saturday: 10am – 4pm<br />
@@ -108,7 +108,7 @@ export default function ContactPage() {
                       required
                       value={fields.name}
                       onChange={handleChange}
-                      className="w-full rounded border border-gray-200 px-3 py-2 text-sm text-[var(--color-text)] focus:outline-none focus:border-[var(--color-brand-navy)] focus:ring-1 focus:ring-[var(--color-brand-navy)]"
+                      className="w-full rounded border border-gray-200 px-3 py-2 text-sm text-[var(--color-text)] focus:outline-none focus:border-[var(--color-brand-green)] focus:ring-1 focus:ring-[var(--color-brand-green)]"
                       placeholder="Jane Smith"
                     />
                   </div>
@@ -123,7 +123,7 @@ export default function ContactPage() {
                       required
                       value={fields.phone}
                       onChange={handleChange}
-                      className="w-full rounded border border-gray-200 px-3 py-2 text-sm text-[var(--color-text)] focus:outline-none focus:border-[var(--color-brand-navy)] focus:ring-1 focus:ring-[var(--color-brand-navy)]"
+                      className="w-full rounded border border-gray-200 px-3 py-2 text-sm text-[var(--color-text)] focus:outline-none focus:border-[var(--color-brand-green)] focus:ring-1 focus:ring-[var(--color-brand-green)]"
                       placeholder="(313) 555-0100"
                     />
                   </div>
@@ -140,7 +140,7 @@ export default function ContactPage() {
                     required
                     value={fields.email}
                     onChange={handleChange}
-                    className="w-full rounded border border-gray-200 px-3 py-2 text-sm text-[var(--color-text)] focus:outline-none focus:border-[var(--color-brand-navy)] focus:ring-1 focus:ring-[var(--color-brand-navy)]"
+                    className="w-full rounded border border-gray-200 px-3 py-2 text-sm text-[var(--color-text)] focus:outline-none focus:border-[var(--color-brand-green)] focus:ring-1 focus:ring-[var(--color-brand-green)]"
                     placeholder="jane@example.com"
                   />
                 </div>
@@ -154,7 +154,7 @@ export default function ContactPage() {
                     name="interest"
                     value={fields.interest}
                     onChange={handleChange}
-                    className="w-full rounded border border-gray-200 px-3 py-2 text-sm text-[var(--color-text)] focus:outline-none focus:border-[var(--color-brand-navy)] focus:ring-1 focus:ring-[var(--color-brand-navy)] bg-white"
+                    className="w-full rounded border border-gray-200 px-3 py-2 text-sm text-[var(--color-text)] focus:outline-none focus:border-[var(--color-brand-green)] focus:ring-1 focus:ring-[var(--color-brand-green)] bg-white"
                   >
                     <option value="">Select a category</option>
                     <option>Cabinets</option>
@@ -176,7 +176,7 @@ export default function ContactPage() {
                     rows={4}
                     value={fields.message}
                     onChange={handleChange}
-                    className="w-full rounded border border-gray-200 px-3 py-2 text-sm text-[var(--color-text)] focus:outline-none focus:border-[var(--color-brand-navy)] focus:ring-1 focus:ring-[var(--color-brand-navy)] resize-none"
+                    className="w-full rounded border border-gray-200 px-3 py-2 text-sm text-[var(--color-text)] focus:outline-none focus:border-[var(--color-brand-green)] focus:ring-1 focus:ring-[var(--color-brand-green)] resize-none"
                     placeholder="Room size, timeline, questions, anything helpful..."
                   />
                 </div>
@@ -188,7 +188,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={status === "submitting"}
-                  className="w-full rounded bg-[var(--color-brand-gold)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--color-brand-gold-dark)] transition-colors disabled:opacity-60"
+                  className="w-full rounded bg-[var(--color-brand-green)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--color-brand-green-dark)] transition-colors disabled:opacity-60"
                 >
                   {status === "submitting" ? "Sending…" : "Send Message"}
                 </button>

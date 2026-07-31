@@ -30,9 +30,9 @@ export default function FinancingPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[var(--color-brand-navy)] text-white py-14 px-4">
+      <section className="bg-[var(--color-brand-green)] text-white py-14 px-4">
         <div className="mx-auto max-w-4xl">
-          <p className="text-sm text-[var(--color-brand-gold)] font-medium mb-2">Financing</p>
+          <p className="text-sm text-[var(--color-brand-dark)] font-semibold mb-2">Financing</p>
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Don&apos;t Let Budget Stop Your Project</h1>
           <p className="mt-4 text-white/80 text-base leading-relaxed max-w-2xl">
             We offer flexible financing options so you can start your kitchen or flooring project now
@@ -53,7 +53,7 @@ export default function FinancingPage() {
               { step: "4", heading: "Start your project", body: "Once approved, place your order. We&apos;ll coordinate delivery and can refer installers if you need them." },
             ].map((item) => (
               <li key={item.step} className="flex gap-5">
-                <div className="flex-none w-9 h-9 rounded-full bg-[var(--color-brand-navy)] text-white text-sm font-bold flex items-center justify-center shrink-0">
+                <div className="flex-none w-9 h-9 rounded-full bg-[var(--color-brand-green)] text-white text-sm font-bold flex items-center justify-center shrink-0">
                   {item.step}
                 </div>
                 <div>
@@ -82,14 +82,14 @@ export default function FinancingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-12 px-4 bg-[var(--color-brand-navy)] text-white">
+      <section className="py-12 px-4 bg-[var(--color-brand-green)] text-white">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-xl font-bold">Ready to get started?</h2>
           <p className="mt-2 text-white/80 text-sm leading-relaxed">
             Build a project estimate online, then come in to discuss financing and get an official quote.
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
-            <Link href="/project-builder" className="rounded bg-[var(--color-brand-gold)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--color-brand-gold-dark)] transition-colors">
+            <Link href="/project-builder" className="rounded bg-[var(--color-brand-green)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--color-brand-green-dark)] transition-colors">
               Build Your Project
             </Link>
             <Link href="/contact" className="rounded border border-white/30 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors">
