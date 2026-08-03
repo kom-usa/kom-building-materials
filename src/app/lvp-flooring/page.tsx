@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import type { Product } from "@/types/product";
 import lvpData from "@/data/lvp-flooring.json";
 
@@ -19,7 +20,7 @@ const whyLvp = [
 ];
 
 export default function LvpFlooringPage() {
-  const featured = lvp.filter((p) => p.featured);
+  const featured = lvp;
 
   return (
     <>
@@ -57,12 +58,22 @@ export default function LvpFlooringPage() {
       {/* Product grid */}
       <section className="py-14 px-4 bg-[var(--color-background)]">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-xl font-bold text-[var(--color-text)] mb-8">Featured LVP Styles</h2>
+          <h2 className="text-xl font-bold text-[var(--color-text)] mb-8">LVP Flooring — All Collections</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {featured.map((product) => (
               <div key={product.sku} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                <div className="h-48 bg-gray-100 flex items-center justify-center text-gray-300 text-sm">
-                  Photo coming soon
+                <div className="h-48 relative bg-gray-100">
+                  {product.image ? (
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  ) : (
+                    <div className="h-full flex items-center justify-center text-xs text-gray-400 font-medium">Photo coming soon</div>
+                  )}
                 </div>
                 <div className="p-5">
                   <p className="text-xs text-[var(--color-muted)] font-mono mb-1">{product.sku}</p>

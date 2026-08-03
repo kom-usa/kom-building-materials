@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -31,16 +32,15 @@ export default function Header({ announcement }: { announcement?: string }) {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-20 items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 shrink-0">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 6L6 20V42H18V30H30V42H42V20L24 6Z" fill="#2c2c2c" stroke="#2c2c2c" strokeWidth="1" strokeLinejoin="round"/>
-                <path d="M24 6L6 20" stroke="#2c2c2c" strokeWidth="2.5" strokeLinecap="round"/>
-                <path d="M24 6L42 20" stroke="#2c2c2c" strokeWidth="2.5" strokeLinecap="round"/>
-              </svg>
-              <div className="leading-tight">
-                <span className="block text-xl font-black text-[var(--color-dark)] tracking-tight" style={{color: '#2c2c2c'}}>KOM</span>
-                <span className="block text-[10px] font-bold tracking-widest uppercase" style={{color: '#2c2c2c'}}>Building Materials</span>
-              </div>
+            <Link href="/" className="shrink-0">
+              <Image
+                src="/images/logo.png"
+                alt="KOM Building Materials"
+                width={160}
+                height={64}
+                className="h-14 w-auto object-contain"
+                priority
+              />
             </Link>
 
             {/* Desktop nav */}

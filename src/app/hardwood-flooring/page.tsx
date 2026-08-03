@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import type { Product } from "@/types/product";
 import hardwoodData from "@/data/hardwood-flooring.json";
 
@@ -11,21 +12,15 @@ export const metadata: Metadata = {
 
 const hardwood = hardwoodData as Product[];
 
-const solidVsEngineered = [
-  {
-    type: "Solid Hardwood (3/4\")",
-    pros: "Can be sanded and refinished 5–8 times over its lifetime. Adds the most resale value.",
-    cons: "Sensitive to humidity — not for basements or over radiant heat. Nail-down or glue-down only.",
-  },
-  {
-    type: "Engineered Hardwood",
-    pros: "Handles humidity swings better. Can float, staple, or glue. Compatible with radiant heat in most cases.",
-    cons: "Thinner wear layer — can be refinished fewer times (1–3 depending on thickness).",
-  },
+const widthGuide = [
+  { width: "2 1/4\"", best: "Smaller rooms, traditional look", detail: "Classic narrow plank adds subtle charm without overwhelming the space." },
+  { width: "3 1/4\"", best: "Most popular — any room", detail: "Versatile and balanced. Works with any home style from traditional to modern." },
+  { width: "4\"", best: "Modern and transitional spaces", detail: "Wider plank makes rooms feel larger and shows more natural grain." },
+  { width: "5\"", best: "Open concept, high-end finish", detail: "Bold wide-plank look that delivers a premium feel in large spaces." },
 ];
 
 export default function HardwoodFlooringPage() {
-  const featured = hardwood.filter((p) => p.featured);
+  const featured = hardwood;
 
   return (
     <>
@@ -48,16 +43,17 @@ export default function HardwoodFlooringPage() {
         </div>
       </section>
 
-      {/* Solid vs Engineered */}
+
+      {/* Width guide */}
       <section className="py-12 px-4 bg-white border-b border-gray-100">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-lg font-semibold text-[var(--color-text)] mb-6">Solid vs. Engineered — which is right for you?</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {solidVsEngineered.map((option) => (
-              <div key={option.type} className="border border-gray-100 rounded-lg p-5">
-                <h3 className="font-semibold text-[var(--color-brand-green)]">{option.type}</h3>
-                <p className="mt-2 text-sm text-green-700 leading-relaxed">✓ {option.pros}</p>
-                <p className="mt-1 text-sm text-[var(--color-muted)] leading-relaxed">— {option.cons}</p>
+          <h2 className="text-lg font-semibold text-[var(--color-text)] mb-6">Which width is right for your project?</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {widthGuide.map((w) => (
+              <div key={w.width} className="border border-gray-100 rounded-lg p-5">
+                <h3 className="font-semibold text-[var(--color-brand-green)] text-lg">{w.width}</h3>
+                <p className="mt-1 text-sm font-medium text-[var(--color-text)]">{w.best}</p>
+                <p className="mt-2 text-sm text-[var(--color-muted)] leading-relaxed">{w.detail}</p>
               </div>
             ))}
           </div>
@@ -67,12 +63,22 @@ export default function HardwoodFlooringPage() {
       {/* Product grid */}
       <section className="py-14 px-4 bg-[var(--color-background)]">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-xl font-bold text-[var(--color-text)] mb-8">Featured Hardwood Styles</h2>
+          <h2 className="text-xl font-bold text-[var(--color-text)] mb-8">Hardwood Flooring — All Products</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {featured.map((product) => (
               <div key={product.sku} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                <div className="h-48 bg-gray-100 flex items-center justify-center text-gray-300 text-sm">
-                  Photo coming soon
+                <div className="h-48 relative bg-gray-100">
+                  {product.image ? (
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  ) : (
+                    <div className="h-full flex items-center justify-center text-xs text-gray-400 font-medium">Photo coming soon</div>
+                  )}
                 </div>
                 <div className="p-5">
                   <p className="text-xs text-[var(--color-muted)] font-mono mb-1">{product.sku}</p>

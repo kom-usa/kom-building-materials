@@ -30,7 +30,7 @@ const materialGuide = [
 ];
 
 export default function CountertopsPage() {
-  const featured = countertops.filter((p) => p.featured);
+  const featured = countertops;
 
   return (
     <>

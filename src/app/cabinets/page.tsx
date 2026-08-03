@@ -19,7 +19,7 @@ const features = [
 ];
 
 export default function CabinetsPage() {
-  const featured = cabinets.filter((p) => p.featured);
+  const featured = cabinets;
 
   return (
     <>
