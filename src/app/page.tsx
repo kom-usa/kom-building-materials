@@ -6,14 +6,14 @@ const categories = [
   { label: "Cabinets", href: "/cabinets", description: "Shaker, raised-panel, and modern styles. Soft-close hinges and dovetail drawers standard.", icon: "🪵" },
   { label: "Countertops", href: "/countertops", description: "Quartz, granite, and butcher block. Fabricated and installed to your exact measurements.", icon: "◻️" },
   { label: "LVP Flooring", href: "/lvp-flooring", description: "100% waterproof luxury vinyl plank. Pet-friendly, kid-friendly, and budget-friendly.", icon: "🏠" },
-  { label: "Hardwood Flooring", href: "/hardwood-flooring", description: "Solid and engineered hardwood. Can be refinished for decades of use.", icon: "🌲" },
+  { label: "Hardwood Flooring", href: "/hardwood-flooring", description: "Unfinished Red Oak solid hardwood in 4 widths. Locally sourced, refinishable, built to last.", icon: "🌲" },
 ];
 
 const valuePillars = [
   { heading: "No Middleman Markup", body: "We buy direct from manufacturers and pass the savings to you. Same quality, lower price." },
   { heading: "Expert Guidance", body: "Real advice from people who work in the showroom. Bring your measurements and photos — we'll help you plan." },
   { heading: "Veteran-Owned", body: "KOM is a Service-Disabled Veteran-Owned Small Business. We run a tight, honest operation." },
-  { heading: "See It In Person", body: "Touch the samples, compare colors side by side. Our Redford Township showroom is open six days a week." },
+  { heading: "See It In Person", body: "Touch the samples, compare colors side by side. Visit our Redford Township showroom — no appointment needed." },
 ];
 
 export default async function HomePage() {

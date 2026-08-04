@@ -38,7 +38,7 @@ export default function Header({ announcement }: { announcement?: string }) {
                 alt="KOM Building Materials"
                 width={160}
                 height={64}
-                className="h-14 w-auto object-contain"
+                className="h-20 w-auto object-contain"
                 priority
               />
             </Link>

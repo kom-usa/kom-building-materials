@@ -35,14 +35,26 @@
     "name": "New Mountain Collection",
     "manufacturer": "KOM Building Materials",
     "description": "Our best value collection. 5.2mm core with a 20mil wear layer and pre-attached 1mm acoustic pad. Available in 9 colors. Click-lock floating installation.",
-    "dimensions": "48\" L x 7\" W — 5.2mm total — 20mil wear layer — 9 colors",
+    "dimensions": "48\" L x 7\" W — 5.2mm total — 20mil wear layer",
     "image": "/images/lvp/lvp-mountain-collection.png",
     "price": 2.59,
     "priceUnit": "per-sqft",
     "status": "in-stock",
     "leadTime": "In stock — take home today",
     "notes": "Pre-attached 1mm soft acoustic pad.",
-    "featured": true
+    "featured": true,
+    "sqftPerCarton": 23.77,
+    "colors": [
+      { "name": "Amelia Oak",    "image": "/images/lvp/new-mountain/amelia-oak.png",    "visualizerUrl": "https://www.kujiale.cn/design/3FO3L6RRWRMV/show?fromqrcode=true" },
+      { "name": "Mauna Kea",     "image": "/images/lvp/new-mountain/mauna-kea.png",     "visualizerUrl": "https://www.kujiale.cn/design/3FO3L6NN7RR3/show?fromqrcode=true" },
+      { "name": "Great Smoky",   "image": "/images/lvp/new-mountain/great-smoky.png",   "visualizerUrl": "https://www.kujiale.cn/design/3FO3L6OCVB8C/show?fromqrcode=true" },
+      { "name": "Woodstock",     "image": "/images/lvp/new-mountain/woodstock.png",     "visualizerUrl": "https://www.kujiale.cn/design/3FO3L6SNHU4W/show?fromqrcode=true" },
+      { "name": "Ash Gray",      "image": "/images/lvp/new-mountain/ash-gray.png",      "visualizerUrl": "https://www.kujiale.cn/design/3FO3L6WJB4LH/show?fromqrcode=true" },
+      { "name": "Walnut",        "image": "/images/lvp/new-mountain/walnut.png",        "visualizerUrl": "https://www.kujiale.cn/design/3FO3L6QTCC3C/show?fromqrcode=true" },
+      { "name": "Cozy Espresso", "image": "/images/lvp/new-mountain/cozy-espresso.png", "visualizerUrl": "https://www.kujiale.cn/design/3FO3L6SQ234L/show?fromqrcode=true" },
+      { "name": "Highland",      "image": "/images/lvp/new-mountain/highland.png",      "visualizerUrl": "https://www.kujiale.cn/design/3FO3L6WDTNV8/show?fromqrcode=true" },
+      { "name": "Whitney",       "image": "/images/lvp/new-mountain/whitney.png",       "visualizerUrl": "https://www.kujiale.cn/design/3FO3L6WD6N2C/show?fromqrcode=true" }
+    ]
   },
   {
     "sku": "LVP-004",
@@ -50,14 +62,26 @@
     "name": "NASA Collection",
     "manufacturer": "KOM Building Materials",
     "description": "Our most popular collection. Wider 9\" planks with a 20mil wear layer. Realistic wood grain texture available in 9 colors. Pre-attached underlayment included.",
-    "dimensions": "48\" L x 9\" W — 5.5mm total — 20mil wear layer — 9 colors",
+    "dimensions": "48\" L x 9\" W — 5.5mm total — 20mil wear layer",
     "image": "/images/lvp/lvp-nasa-collection.png",
     "price": 2.79,
     "priceUnit": "per-sqft",
     "status": "in-stock",
     "leadTime": "In stock — take home today",
     "notes": "Pre-attached 1mm soft acoustic pad.",
-    "featured": true
+    "featured": true,
+    "sqftPerCarton": 30.20,
+    "colors": [
+      { "name": "Orion",    "image": "/images/lvp/nasa/orion.png",    "visualizerUrl": "https://www.kujiale.cn/design/3FO3N67KL73I/show?fromqrcode=true" },
+      { "name": "Stardust", "image": "/images/lvp/nasa/stardust.png", "visualizerUrl": "https://www.kujiale.cn/design/3FO3N6EU1MMV/show?fromqrcode=true" },
+      { "name": "Atlantis", "image": "/images/lvp/nasa/atlantis.png", "visualizerUrl": "https://www.kujiale.cn/design/3FO3N6E8QXP6/show?fromqrcode=true" },
+      { "name": "Maven",    "image": "/images/lvp/nasa/maven.png",    "visualizerUrl": "https://www.kujiale.cn/design/3FO3N66KV3W4/show?fromqrcode=true" },
+      { "name": "Gravity",  "image": "/images/lvp/nasa/gravity.png",  "visualizerUrl": "https://www.kujiale.cn/design/3FO3N67EI2CR/show?fromqrcode=true" },
+      { "name": "Viking",   "image": "/images/lvp/nasa/viking.png",   "visualizerUrl": "https://www.kujiale.cn/design/3FO3N1LEIRBG/show?fromqrcode=true" },
+      { "name": "Pioneer",  "image": "/images/lvp/nasa/pioneer.png",  "visualizerUrl": "https://www.kujiale.cn/design/3FO3N1JS9J6I/show?fromqrcode=true" },
+      { "name": "Voyager",  "image": "/images/lvp/nasa/voyager.png",  "visualizerUrl": "https://www.kujiale.cn/design/3FO3N67Q0CK3/show?fromqrcode=true" },
+      { "name": "Galileo",  "image": "/images/lvp/nasa/galileo.png",  "visualizerUrl": "https://www.kujiale.cn/design/3FO3N1L75604/show?fromqrcode=true" }
+    ]
   },
   {
     "sku": "LVP-005",
@@ -65,14 +89,27 @@
     "name": "Planet Collection",
     "manufacturer": "KOM Building Materials",
     "description": "Premium thick-plank LVP for upscale homes. 6.5mm core with a 22mil commercial-grade wear layer. Longer 60\" planks create a more high-end look. Available in 10 colors.",
-    "dimensions": "60\" L x 9\" W — 6.5mm total — 22mil wear layer — 10 colors",
+    "dimensions": "60\" L x 9\" W — 6.5mm total — 22mil wear layer",
     "image": "/images/lvp/lvp-planet-collection.png",
     "price": 3.39,
     "priceUnit": "per-sqft",
     "status": "in-stock",
     "leadTime": "In stock — take home today",
-    "notes": "Pre-attached 1mm soft acoustic pad.",
-    "featured": true
+    "notes": "Pre-attached 1.5mm soft acoustic pad.",
+    "featured": true,
+    "sqftPerCarton": 22.28,
+    "colors": [
+      { "name": "Mars",       "image": "/images/lvp/planet/mars.png",       "visualizerUrl": "https://www.kujiale.cn/design/3FO3N73509WI/show?fromqrcode=true" },
+      { "name": "Earth",      "image": "/images/lvp/planet/earth.png",      "visualizerUrl": "https://www.kujiale.cn/design/3FO3N0LAI35N/show?fromqrcode=true" },
+      { "name": "Venus",      "image": "/images/lvp/planet/venus.png",      "visualizerUrl": "https://www.kujiale.cn/design/3FO3N7B16JHF/show?fromqrcode=true" },
+      { "name": "Mercury",    "image": "/images/lvp/planet/mercury.png",    "visualizerUrl": "https://www.kujiale.cn/design/3FO3N73DSGLO/show?fromqrcode=true" },
+      { "name": "Saturn",     "image": "/images/lvp/planet/saturn.png",     "visualizerUrl": "https://www.kujiale.cn/design/3FO3N735FXA7/show?fromqrcode=true" },
+      { "name": "Terra Nova", "image": "/images/lvp/planet/terra-nova.png", "visualizerUrl": "https://www.kujiale.cn/design/3FO3N79MULGP/show?fromqrcode=true" },
+      { "name": "Astralis",   "image": "/images/lvp/planet/astralis.png",   "visualizerUrl": "https://www.kujiale.cn/design/3FO3N72I6UM7/show?fromqrcode=true" },
+      { "name": "Pluto",      "image": "/images/lvp/planet/pluto.png",      "visualizerUrl": "https://www.kujiale.cn/design/3FO3N7350D9J/show?fromqrcode=true" },
+      { "name": "Neptune",    "image": "/images/lvp/planet/neptune.png",    "visualizerUrl": "https://www.kujiale.cn/design/3FO3N78U4EO9/show?fromqrcode=true" },
+      { "name": "Moon",       "image": "/images/lvp/planet/moon.png",       "visualizerUrl": "https://www.kujiale.cn/design/3FO3N7350JXL/show?fromqrcode=true" }
+    ]
   },
   {
     "sku": "LVP-006",
@@ -80,13 +117,26 @@
     "name": "Roman Collection",
     "manufacturer": "KOM Building Materials",
     "description": "Luxury and commercial-grade LVP. 8mm core with a 30mil wear layer — the toughest in our lineup. Longest planks for the most premium look. Available in 10 colors.",
-    "dimensions": "60\" L x 9\" W — 8mm total — 30mil wear layer — 10 colors",
+    "dimensions": "60\" L x 9\" W — 8mm total — 30mil wear layer",
     "image": "/images/lvp/lvp-roman-collection.png",
     "price": 3.99,
     "priceUnit": "per-sqft",
     "status": "in-stock",
     "leadTime": "In stock — take home today",
-    "notes": "Pre-attached 1mm soft acoustic pad.",
-    "featured": true
+    "notes": "Pre-attached 2mm soft acoustic pad.",
+    "featured": true,
+    "sqftPerCarton": 22.28,
+    "colors": [
+      { "name": "Athena",  "image": "/images/lvp/roman/athena.png",  "visualizerUrl": "https://www.kujiale.cn/design/3FO3N5HGIXMV/show?fromqrcode=true" },
+      { "name": "Zeus",    "image": "/images/lvp/roman/zeus.png",    "visualizerUrl": "https://www.kujiale.cn/design/3FO3N5F2TEVQ/show?fromqrcode=true" },
+      { "name": "Eris",    "image": "/images/lvp/roman/eris.png",    "visualizerUrl": "https://www.kujiale.cn/design/3FO3N5IBMRP2/show?fromqrcode=true" },
+      { "name": "Helios",  "image": "/images/lvp/roman/helios.png",  "visualizerUrl": "https://www.kujiale.cn/design/3FO3N5GBIFE1/show?fromqrcode=true" },
+      { "name": "Hera",    "image": "/images/lvp/roman/hera.png",    "visualizerUrl": "https://www.kujiale.cn/design/3FO3N5HUSL2B/show?fromqrcode=true" },
+      { "name": "Roma",    "image": "/images/lvp/roman/roma.png",    "visualizerUrl": "https://www.kujiale.cn/design/3FO3N78GPPM3/show?fromqrcode=true" },
+      { "name": "Oceanus", "image": "/images/lvp/roman/oceanus.png", "visualizerUrl": "https://www.kujiale.cn/design/3FO3N5JSWWGE/show?fromqrcode=true" },
+      { "name": "Ares",    "image": "/images/lvp/roman/ares.png",    "visualizerUrl": "https://www.kujiale.cn/design/3FO3N5G8CLPV/show?fromqrcode=true" },
+      { "name": "Artemis", "image": "/images/lvp/roman/artemis.png", "visualizerUrl": "https://www.kujiale.cn/design/3FO3N5HY2DDC/show?fromqrcode=true" },
+      { "name": "Hermes",  "image": "/images/lvp/roman/hermes.png",  "visualizerUrl": "https://www.kujiale.cn/design/3FO3N5IXNG4J/show?fromqrcode=true" }
+    ]
   }
 ]

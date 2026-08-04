@@ -8,6 +8,12 @@ export type ProductStatus = "in-stock" | "special-order" | "discontinued";
 
 export type PriceUnit = "per-unit" | "per-sqft" | "per-lf" | "per-box";
 
+export interface LvpColor {
+  name: string;
+  image: string;
+  visualizerUrl: string;
+}
+
 export interface Product {
   sku: string;
   category: ProductCategory;
@@ -22,4 +28,6 @@ export interface Product {
   leadTime: string;
   notes: string;
   featured: boolean;
+  sqftPerCarton?: number;
+  colors?: LvpColor[];
 }

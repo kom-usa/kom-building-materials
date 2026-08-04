@@ -7,11 +7,7 @@ export default async function ContactPage() {
   const phone = settings?.phone || "(313) 559-1888";
   const email = settings?.email || "Jordan@KOM-USA.com";
   const address = settings?.address || "15497 Beech Daly Road\nRedford Township, MI 48239";
-  const hours: { days: string; hours: string }[] = settings?.showroomHours || [
-    { days: "Mon–Fri", hours: "9am – 6pm" },
-    { days: "Saturday", hours: "10am – 4pm" },
-    { days: "Sunday", hours: "Closed" },
-  ];
+  const hours: { days: string; hours: string }[] = settings?.showroomHours || [];
 
   return (
     <>
