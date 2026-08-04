@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { getSiteSettings } from "@/sanity/lib/queries";
+import { SanityLive } from "@/sanity/lib/live";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default async function RootLayout({
         <Header announcement={settings?.announcementBar} />
         <main className="flex-1">{children}</main>
         <Footer />
+        <SanityLive />
       </body>
     </html>
   );

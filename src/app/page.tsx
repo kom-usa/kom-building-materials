@@ -88,7 +88,7 @@ export default async function HomePage() {
           <div className="mx-auto max-w-7xl">
             <h2 className="text-2xl font-bold text-center text-[var(--color-text)] mb-10">From Our Showroom</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-              {gallery.map((item: { _id: string; image: { asset: { url: string } }; caption?: string }) => (
+              {gallery.map((item) => (
                 <div key={item._id} className="aspect-square rounded-lg overflow-hidden bg-gray-100">
                   <Image
                     src={item.image.asset.url}
@@ -110,7 +110,7 @@ export default async function HomePage() {
           <div className="mx-auto max-w-7xl">
             <h2 className="text-2xl font-bold text-center text-[var(--color-text)] mb-10">What Customers Say</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {testimonials.map((t: { _id: string; name: string; quote: string; rating?: number; projectType?: string; location?: string }) => (
+              {testimonials.map((t) => (
                 <div key={t._id} className="bg-[var(--color-background)] rounded-xl p-6 border border-gray-100">
                   {t.rating && (
                     <p className="text-[var(--color-brand-green)] text-sm mb-2">{"★".repeat(t.rating)}</p>
