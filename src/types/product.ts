@@ -14,6 +14,18 @@ export interface LvpColor {
   visualizerUrl: string;
 }
 
+export interface CabinetItem {
+  sku: string;
+  name: string;
+  dimensions: string;
+  image: string;
+}
+
+export interface CabinetGroup {
+  group: string;
+  items: CabinetItem[];
+}
+
 export interface Product {
   sku: string;
   category: ProductCategory;
@@ -30,4 +42,5 @@ export interface Product {
   featured: boolean;
   sqftPerCarton?: number;
   colors?: LvpColor[];
+  cabinetGroups?: CabinetGroup[];
 }

@@ -1,47 +1,87 @@
 [
   {
-    "sku": "CAB-001",
+    "sku": "cabinets",
     "category": "cabinets",
-    "name": "Mercury WHITE",
+    "name": "Mercury White Cabinets",
     "manufacturer": "KOM Building Materials",
-    "description": "Pristine white cabinetry with full overlay doors and drawers. 3/4\" thick panels, soft-close hinges, full-extension soft-close drawer slides, and 1/2\" cabinet-grade plywood construction.",
-    "dimensions": "[PLACEHOLDER — add dimensions]",
+    "description": "Full Overlay Shaker style. Plywood Box construction with Solid Wood Frame and HDF Center Panel doors. 6-Way Adjustable Soft-Close Hinges. Mercury White finish — In Stock.",
+    "dimensions": "",
     "image": "",
     "price": 0,
     "priceUnit": "per-unit",
     "status": "in-stock",
-    "leadTime": "[PLACEHOLDER — add lead time]",
-    "notes": "[PLACEHOLDER — contact Jordan for pricing and available sizes]",
-    "featured": true
-  },
-  {
-    "sku": "CAB-002",
-    "category": "cabinets",
-    "name": "Mercury GREY",
-    "manufacturer": "KOM Building Materials",
-    "description": "Grey doors and drawers with full overlays and 3/4\" thick panels. European design with soft-close hinges and adjustable shelving.",
-    "dimensions": "[PLACEHOLDER — add dimensions]",
-    "image": "",
-    "price": 0,
-    "priceUnit": "per-unit",
-    "status": "in-stock",
-    "leadTime": "[PLACEHOLDER — add lead time]",
-    "notes": "[PLACEHOLDER — contact Jordan for pricing and available sizes]",
-    "featured": true
-  },
-  {
-    "sku": "CAB-003",
-    "category": "cabinets",
-    "name": "Mercury ESPRESSO",
-    "manufacturer": "KOM Building Materials",
-    "description": "Espresso-colored doors with full overlays and 3/4\" thick panels. European design with soft-close hinges and 1/2\" cabinet-grade plywood construction.",
-    "dimensions": "[PLACEHOLDER — add dimensions]",
-    "image": "",
-    "price": 0,
-    "priceUnit": "per-unit",
-    "status": "in-stock",
-    "leadTime": "[PLACEHOLDER — add lead time]",
-    "notes": "[PLACEHOLDER — contact Jordan for pricing and available sizes]",
-    "featured": true
+    "leadTime": "In stock — available immediately",
+    "notes": "Contact us for pricing on individual units.",
+    "featured": true,
+    "cabinetGroups": [
+      {
+        "group": "Wall Cabinets – 1 Door",
+        "items": [
+          { "sku": "W0930", "name": "9\" Wall Cabinet – 1 Door", "dimensions": "9\"W x 30\"H x 12\"D", "image": "/images/cabinets/w0930.png" },
+          { "sku": "W0936", "name": "9\" Wall Cabinet – 1 Door", "dimensions": "9\"W x 36\"H x 12\"D", "image": "/images/cabinets/w0936.png" },
+          { "sku": "W0942", "name": "9\" Wall Cabinet – 1 Door", "dimensions": "9\"W x 42\"H x 12\"D", "image": "/images/cabinets/w0942.png" },
+          { "sku": "W1230", "name": "12\" Wall Cabinet – 1 Door", "dimensions": "12\"W x 30\"H x 12\"D", "image": "/images/cabinets/w1230.png" },
+          { "sku": "W1236", "name": "12\" Wall Cabinet – 1 Door", "dimensions": "12\"W x 36\"H x 12\"D", "image": "/images/cabinets/w1236.png" },
+          { "sku": "W1242", "name": "12\" Wall Cabinet – 1 Door", "dimensions": "12\"W x 42\"H x 12\"D", "image": "/images/cabinets/w1242.png" },
+          { "sku": "W1530", "name": "15\" Wall Cabinet – 1 Door", "dimensions": "15\"W x 30\"H x 12\"D", "image": "/images/cabinets/w1530.png" },
+          { "sku": "W1536", "name": "15\" Wall Cabinet – 1 Door", "dimensions": "15\"W x 36\"H x 12\"D", "image": "/images/cabinets/w1536.png" },
+          { "sku": "W1542", "name": "15\" Wall Cabinet – 1 Door", "dimensions": "15\"W x 42\"H x 12\"D", "image": "/images/cabinets/w1542.png" },
+          { "sku": "W1830", "name": "18\" Wall Cabinet – 1 Door", "dimensions": "18\"W x 30\"H x 12\"D", "image": "/images/cabinets/w1830.png" },
+          { "sku": "W1836", "name": "18\" Wall Cabinet – 1 Door", "dimensions": "18\"W x 36\"H x 12\"D", "image": "/images/cabinets/w1836.png" },
+          { "sku": "W1842", "name": "18\" Wall Cabinet – 1 Door", "dimensions": "18\"W x 42\"H x 12\"D", "image": "/images/cabinets/w1842.png" },
+          { "sku": "W2130", "name": "21\" Wall Cabinet – 1 Door", "dimensions": "21\"W x 30\"H x 12\"D", "image": "/images/cabinets/w2130.png" },
+          { "sku": "W2136", "name": "21\" Wall Cabinet – 1 Door", "dimensions": "21\"W x 36\"H x 12\"D", "image": "/images/cabinets/w2136.png" },
+          { "sku": "W2142", "name": "21\" Wall Cabinet – 1 Door", "dimensions": "21\"W x 42\"H x 12\"D", "image": "/images/cabinets/w2142.png" },
+          { "sku": "W2430", "name": "24\" Wall Cabinet – 1 Door", "dimensions": "24\"W x 30\"H x 12\"D", "image": "/images/cabinets/w2430-1d.png" }
+        ]
+      },
+      {
+        "group": "Wall Cabinets – 2 Door",
+        "items": [
+          { "sku": "W2430-2D", "name": "24\" Wall Cabinet – 2 Door", "dimensions": "24\"W x 30\"H x 12\"D", "image": "/images/cabinets/w2430-2d.png" },
+          { "sku": "W2436", "name": "24\" Wall Cabinet – 2 Door", "dimensions": "24\"W x 36\"H x 12\"D", "image": "/images/cabinets/w2436.png" },
+          { "sku": "W2442", "name": "24\" Wall Cabinet – 2 Door", "dimensions": "24\"W x 42\"H x 12\"D", "image": "/images/cabinets/w2442.png" },
+          { "sku": "W2730", "name": "27\" Wall Cabinet – 2 Door", "dimensions": "27\"W x 30\"H x 12\"D", "image": "/images/cabinets/w2730.png" },
+          { "sku": "W2736", "name": "27\" Wall Cabinet – 2 Door", "dimensions": "27\"W x 36\"H x 12\"D", "image": "/images/cabinets/w2736.png" },
+          { "sku": "W2742", "name": "27\" Wall Cabinet – 2 Door", "dimensions": "27\"W x 42\"H x 12\"D", "image": "/images/cabinets/w2742.png" },
+          { "sku": "W3030", "name": "30\" Wall Cabinet – 2 Door", "dimensions": "30\"W x 30\"H x 12\"D", "image": "/images/cabinets/w3030.png" },
+          { "sku": "W3036", "name": "30\" Wall Cabinet – 2 Door", "dimensions": "30\"W x 36\"H x 12\"D", "image": "/images/cabinets/w3036.png" },
+          { "sku": "W3042", "name": "30\" Wall Cabinet – 2 Door", "dimensions": "30\"W x 42\"H x 12\"D", "image": "/images/cabinets/w3042.png" },
+          { "sku": "W3330", "name": "33\" Wall Cabinet – 2 Door", "dimensions": "33\"W x 30\"H x 12\"D", "image": "/images/cabinets/w3330.png" },
+          { "sku": "W3336", "name": "33\" Wall Cabinet – 2 Door", "dimensions": "33\"W x 36\"H x 12\"D", "image": "/images/cabinets/w3336.png" },
+          { "sku": "W3342", "name": "33\" Wall Cabinet – 2 Door", "dimensions": "33\"W x 42\"H x 12\"D", "image": "/images/cabinets/w3342.png" },
+          { "sku": "W3630", "name": "36\" Wall Cabinet – 2 Door", "dimensions": "36\"W x 30\"H x 12\"D", "image": "/images/cabinets/w3630.png" },
+          { "sku": "W3636", "name": "36\" Wall Cabinet – 2 Door", "dimensions": "36\"W x 36\"H x 12\"D", "image": "/images/cabinets/w3636.png" },
+          { "sku": "W3642", "name": "36\" Wall Cabinet – 2 Door", "dimensions": "36\"W x 42\"H x 12\"D", "image": "/images/cabinets/w3642.png" }
+        ]
+      },
+      {
+        "group": "Utility Pantry Cabinets – 1 Door",
+        "items": [
+          { "sku": "UP2496", "name": "24\" Utility Pantry – 96\" High", "dimensions": "24\"W x 96\"H x 24\"D", "image": "/images/cabinets/up2496.png" },
+          { "sku": "UP3084", "name": "30\" Utility Pantry – 84\" High", "dimensions": "30\"W x 84\"H x 24\"D", "image": "/images/cabinets/up3084.png" },
+          { "sku": "UP3090", "name": "30\" Utility Pantry – 90\" High", "dimensions": "30\"W x 90\"H x 24\"D", "image": "/images/cabinets/up3090.png" },
+          { "sku": "UP3096", "name": "30\" Utility Pantry – 96\" High", "dimensions": "30\"W x 96\"H x 24\"D", "image": "/images/cabinets/up3096.png" }
+        ]
+      },
+      {
+        "group": "Wall Diagonal Corner",
+        "items": [
+          { "sku": "WDC2430", "name": "24\" Wall Diagonal Corner – 30\" High", "dimensions": "24\"W x 30\"H x 12\"D", "image": "/images/cabinets/wdc2430.png" },
+          { "sku": "WDC2430MD", "name": "24\" Wall Diagonal Corner Mullion – 30\" High", "dimensions": "24\"W x 30\"H x 12\"D", "image": "/images/cabinets/wdc2430md.png" },
+          { "sku": "WDC2436", "name": "24\" Wall Diagonal Corner – 36\" High", "dimensions": "24\"W x 36\"H x 12\"D", "image": "/images/cabinets/wdc2436.png" },
+          { "sku": "WDC2436MD", "name": "24\" Wall Diagonal Corner Mullion – 36\" High", "dimensions": "24\"W x 36\"H x 12\"D", "image": "/images/cabinets/wdc2436md.png" },
+          { "sku": "WDC2442", "name": "24\" Wall Diagonal Corner – 42\" High", "dimensions": "24\"W x 42\"H x 12\"D", "image": "/images/cabinets/wdc2442.png" },
+          { "sku": "WDC2442MD", "name": "24\" Wall Diagonal Corner Mullion – 42\" High", "dimensions": "24\"W x 42\"H x 12\"D", "image": "/images/cabinets/wdc2442md.png" },
+          { "sku": "WDC2736", "name": "27\" Wall Diagonal Corner – 36\" High", "dimensions": "27\"W x 36\"H x 12\"D", "image": "/images/cabinets/wdc2736.png" }
+        ]
+      },
+      {
+        "group": "Wall End Shelf",
+        "items": [
+          { "sku": "WES0930", "name": "9\" Wall End Shelf – 30\" High", "dimensions": "9\"W x 30\"H x 12\"D", "image": "/images/cabinets/wes0930.png" }
+        ]
+      }
+    ]
   }
 ]

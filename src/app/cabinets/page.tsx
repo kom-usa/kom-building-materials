@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import type { Product } from "@/types/product";
 import cabinetsData from "@/data/cabinets.json";
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 };
 
 const cabinets = cabinetsData as Product[];
+const catalog = cabinets[0];
 
 const features = [
   { heading: "Soft-Close Hinges", body: "Standard on every cabinet — doors close quietly every time." },
@@ -19,8 +21,6 @@ const features = [
 ];
 
 export default function CabinetsPage() {
-  const featured = cabinets;
-
   return (
     <>
       {/* Hero */}
@@ -29,9 +29,7 @@ export default function CabinetsPage() {
           <p className="text-sm text-[var(--color-brand-dark)] font-semibold mb-2">Products</p>
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Kitchen Cabinets</h1>
           <p className="mt-4 text-white/80 text-base leading-relaxed max-w-2xl">
-            Our cabinet collection covers the most popular styles — shaker, raised-panel, and modern flat-front.
-            Every cabinet includes soft-close hinges, dovetail drawers, and ¾&quot; plywood box construction as standard.
-            No upgrades needed to get quality.
+            {catalog.description}
           </p>
           <Link
             href="/project-builder"
@@ -54,56 +52,57 @@ export default function CabinetsPage() {
         </div>
       </section>
 
-      {/* Product grid */}
-      <section className="py-14 px-4 bg-[var(--color-background)]">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="text-xl font-bold text-[var(--color-text)] mb-8">Featured Cabinets</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featured.map((product) => (
-              <div key={product.sku} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                <div className="h-48 bg-gray-100 flex items-center justify-center text-gray-300 text-sm">
-                  Photo coming soon
-                </div>
-                <div className="p-5">
-                  <p className="text-xs text-[var(--color-muted)] font-mono mb-1">{product.sku}</p>
-                  <h3 className="font-semibold text-[var(--color-text)]">{product.name}</h3>
-                  <p className="text-xs text-[var(--color-muted)] mt-0.5">{product.manufacturer}</p>
-                  <p className="mt-2 text-sm text-[var(--color-muted)] leading-relaxed line-clamp-3">
-                    {product.description}
-                  </p>
-                  <div className="mt-4 flex items-center justify-between">
-                    <span className="text-lg font-bold text-[var(--color-brand-green)]">
-                      ${product.price.toLocaleString()}
-                      <span className="text-xs font-normal text-[var(--color-muted)] ml-1">{product.priceUnit.replace("-", " ")}</span>
-                    </span>
-                    <span className={`text-xs font-medium px-2 py-1 rounded-full ${
-                      product.status === "in-stock"
-                        ? "bg-green-50 text-green-700"
-                        : "bg-yellow-50 text-yellow-700"
-                    }`}>
-                      {product.status === "in-stock" ? "In Stock" : "Special Order"}
-                    </span>
+      {/* Cabinet groups */}
+      {catalog.cabinetGroups?.map((group, i) => (
+        <section
+          key={group.group}
+          className={`py-14 px-4 border-t border-gray-100 ${i % 2 === 0 ? "bg-[var(--color-background)]" : "bg-white"}`}
+        >
+          <div className="mx-auto max-w-7xl">
+            <h2 className="text-xl font-bold text-[var(--color-text)] mb-2">{group.group}</h2>
+            <p className="text-sm text-[var(--color-muted)] mb-8">Mercury White · Full Overlay Shaker · In Stock</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {group.items.map((item) => (
+                <div key={item.sku} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                  <div className="relative aspect-[4/3] bg-gray-50">
+                    {item.image ? (
+                      <Image
+                        src={item.image}
+                        alt={`${item.sku} – ${item.name}`}
+                        fill
+                        className="object-contain p-2"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      />
+                    ) : (
+                      <div className="h-full flex items-center justify-center text-gray-300 text-sm">
+                        Photo coming soon
+                      </div>
+                    )}
                   </div>
-                  <p className="mt-2 text-xs text-[var(--color-muted)]">{product.leadTime}</p>
+                  <div className="p-4">
+                    <p className="text-xs text-[var(--color-muted)] font-mono mb-0.5">{item.sku}</p>
+                    <h3 className="font-semibold text-[var(--color-text)] text-sm leading-snug">{item.name}</h3>
+                    <p className="mt-1 text-xs text-[var(--color-muted)]">{item.dimensions}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ))}
 
       {/* CTA */}
-      <section className="py-12 px-4 bg-white border-t border-gray-100">
+      <section className="py-12 px-4 bg-[var(--color-brand-green)] text-white">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-xl font-bold text-[var(--color-text)]">Not sure which cabinet is right for you?</h2>
-          <p className="mt-2 text-sm text-[var(--color-muted)]">
+          <h2 className="text-xl font-bold">Not sure which cabinet is right for you?</h2>
+          <p className="mt-2 text-sm text-white/80">
             Visit our Redford Township showroom to see samples in person, or contact us and we&apos;ll walk you through the options.
           </p>
           <div className="mt-5 flex flex-col sm:flex-row gap-3 justify-center">
-            <Link href="/project-builder" className="rounded bg-[var(--color-brand-green)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--color-brand-green-dark)] transition-colors">
+            <Link href="/project-builder" className="rounded bg-[var(--color-brand-dark)] px-6 py-3 text-sm font-semibold text-white hover:bg-black transition-colors">
               Build Your Project
             </Link>
-            <Link href="/contact" className="rounded border border-gray-200 px-6 py-3 text-sm font-semibold text-[var(--color-text)] hover:bg-gray-50 transition-colors">
+            <Link href="/contact" className="rounded border border-white/40 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors">
               Contact Us
             </Link>
           </div>
