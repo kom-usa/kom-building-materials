@@ -15,71 +15,196 @@
     "featured": true,
     "cabinetGroups": [
       {
-        "group": "Wall Cabinets – 1 Door",
+        "section": "Wall Cabinets",
+        "group": "1 Door",
+        "image": "/images/cabinets/w1836.png",
         "items": [
-          { "sku": "W0930", "name": "9\" Wall Cabinet – 1 Door", "dimensions": "9\"W x 30\"H x 12\"D", "image": "/images/cabinets/w0930.png" },
-          { "sku": "W0936", "name": "9\" Wall Cabinet – 1 Door", "dimensions": "9\"W x 36\"H x 12\"D", "image": "/images/cabinets/w0936.png" },
-          { "sku": "W0942", "name": "9\" Wall Cabinet – 1 Door", "dimensions": "9\"W x 42\"H x 12\"D", "image": "/images/cabinets/w0942.png" },
-          { "sku": "W1230", "name": "12\" Wall Cabinet – 1 Door", "dimensions": "12\"W x 30\"H x 12\"D", "image": "/images/cabinets/w1230.png" },
-          { "sku": "W1236", "name": "12\" Wall Cabinet – 1 Door", "dimensions": "12\"W x 36\"H x 12\"D", "image": "/images/cabinets/w1236.png" },
-          { "sku": "W1242", "name": "12\" Wall Cabinet – 1 Door", "dimensions": "12\"W x 42\"H x 12\"D", "image": "/images/cabinets/w1242.png" },
-          { "sku": "W1530", "name": "15\" Wall Cabinet – 1 Door", "dimensions": "15\"W x 30\"H x 12\"D", "image": "/images/cabinets/w1530.png" },
-          { "sku": "W1536", "name": "15\" Wall Cabinet – 1 Door", "dimensions": "15\"W x 36\"H x 12\"D", "image": "/images/cabinets/w1536.png" },
-          { "sku": "W1542", "name": "15\" Wall Cabinet – 1 Door", "dimensions": "15\"W x 42\"H x 12\"D", "image": "/images/cabinets/w1542.png" },
-          { "sku": "W1830", "name": "18\" Wall Cabinet – 1 Door", "dimensions": "18\"W x 30\"H x 12\"D", "image": "/images/cabinets/w1830.png" },
-          { "sku": "W1836", "name": "18\" Wall Cabinet – 1 Door", "dimensions": "18\"W x 36\"H x 12\"D", "image": "/images/cabinets/w1836.png" },
-          { "sku": "W1842", "name": "18\" Wall Cabinet – 1 Door", "dimensions": "18\"W x 42\"H x 12\"D", "image": "/images/cabinets/w1842.png" },
-          { "sku": "W2130", "name": "21\" Wall Cabinet – 1 Door", "dimensions": "21\"W x 30\"H x 12\"D", "image": "/images/cabinets/w2130.png" },
-          { "sku": "W2136", "name": "21\" Wall Cabinet – 1 Door", "dimensions": "21\"W x 36\"H x 12\"D", "image": "/images/cabinets/w2136.png" },
-          { "sku": "W2142", "name": "21\" Wall Cabinet – 1 Door", "dimensions": "21\"W x 42\"H x 12\"D", "image": "/images/cabinets/w2142.png" },
-          { "sku": "W2430", "name": "24\" Wall Cabinet – 1 Door", "dimensions": "24\"W x 30\"H x 12\"D", "image": "/images/cabinets/w2430-1d.png" }
+          { "sku": "W0930", "dimensions": "9\"W × 30\"H × 12\"D", "price": 125 },
+          { "sku": "W0936", "dimensions": "9\"W × 36\"H × 12\"D", "price": 140 },
+          { "sku": "W0942", "dimensions": "9\"W × 42\"H × 12\"D", "price": 155 },
+          { "sku": "W1230", "dimensions": "12\"W × 30\"H × 12\"D", "price": 140 },
+          { "sku": "W1236", "dimensions": "12\"W × 36\"H × 12\"D", "price": 155 },
+          { "sku": "W1242", "dimensions": "12\"W × 42\"H × 12\"D", "price": 175 },
+          { "sku": "W1530", "dimensions": "15\"W × 30\"H × 12\"D", "price": 155 },
+          { "sku": "W1536", "dimensions": "15\"W × 36\"H × 12\"D", "price": 175 },
+          { "sku": "W1542", "dimensions": "15\"W × 42\"H × 12\"D", "price": 190 },
+          { "sku": "W1830", "dimensions": "18\"W × 30\"H × 12\"D", "price": 175 },
+          { "sku": "W1836", "dimensions": "18\"W × 36\"H × 12\"D", "price": 185 },
+          { "sku": "W1842", "dimensions": "18\"W × 42\"H × 12\"D", "price": 215 },
+          { "sku": "W2130", "dimensions": "21\"W × 30\"H × 12\"D", "price": 185 },
+          { "sku": "W2136", "dimensions": "21\"W × 36\"H × 12\"D", "price": 205 },
+          { "sku": "W2142", "dimensions": "21\"W × 42\"H × 12\"D", "price": 230 }
         ]
       },
       {
-        "group": "Wall Cabinets – 2 Door",
+        "section": "Wall Cabinets",
+        "group": "2 Door",
+        "image": "/images/cabinets/w3036.png",
         "items": [
-          { "sku": "W2430-2D", "name": "24\" Wall Cabinet – 2 Door", "dimensions": "24\"W x 30\"H x 12\"D", "image": "/images/cabinets/w2430-2d.png" },
-          { "sku": "W2436", "name": "24\" Wall Cabinet – 2 Door", "dimensions": "24\"W x 36\"H x 12\"D", "image": "/images/cabinets/w2436.png" },
-          { "sku": "W2442", "name": "24\" Wall Cabinet – 2 Door", "dimensions": "24\"W x 42\"H x 12\"D", "image": "/images/cabinets/w2442.png" },
-          { "sku": "W2730", "name": "27\" Wall Cabinet – 2 Door", "dimensions": "27\"W x 30\"H x 12\"D", "image": "/images/cabinets/w2730.png" },
-          { "sku": "W2736", "name": "27\" Wall Cabinet – 2 Door", "dimensions": "27\"W x 36\"H x 12\"D", "image": "/images/cabinets/w2736.png" },
-          { "sku": "W2742", "name": "27\" Wall Cabinet – 2 Door", "dimensions": "27\"W x 42\"H x 12\"D", "image": "/images/cabinets/w2742.png" },
-          { "sku": "W3030", "name": "30\" Wall Cabinet – 2 Door", "dimensions": "30\"W x 30\"H x 12\"D", "image": "/images/cabinets/w3030.png" },
-          { "sku": "W3036", "name": "30\" Wall Cabinet – 2 Door", "dimensions": "30\"W x 36\"H x 12\"D", "image": "/images/cabinets/w3036.png" },
-          { "sku": "W3042", "name": "30\" Wall Cabinet – 2 Door", "dimensions": "30\"W x 42\"H x 12\"D", "image": "/images/cabinets/w3042.png" },
-          { "sku": "W3330", "name": "33\" Wall Cabinet – 2 Door", "dimensions": "33\"W x 30\"H x 12\"D", "image": "/images/cabinets/w3330.png" },
-          { "sku": "W3336", "name": "33\" Wall Cabinet – 2 Door", "dimensions": "33\"W x 36\"H x 12\"D", "image": "/images/cabinets/w3336.png" },
-          { "sku": "W3342", "name": "33\" Wall Cabinet – 2 Door", "dimensions": "33\"W x 42\"H x 12\"D", "image": "/images/cabinets/w3342.png" },
-          { "sku": "W3630", "name": "36\" Wall Cabinet – 2 Door", "dimensions": "36\"W x 30\"H x 12\"D", "image": "/images/cabinets/w3630.png" },
-          { "sku": "W3636", "name": "36\" Wall Cabinet – 2 Door", "dimensions": "36\"W x 36\"H x 12\"D", "image": "/images/cabinets/w3636.png" },
-          { "sku": "W3642", "name": "36\" Wall Cabinet – 2 Door", "dimensions": "36\"W x 42\"H x 12\"D", "image": "/images/cabinets/w3642.png" }
+          { "sku": "W2430", "dimensions": "24\"W × 30\"H × 12\"D", "price": 210 },
+          { "sku": "W2436", "dimensions": "24\"W × 36\"H × 12\"D", "price": 230 },
+          { "sku": "W2442", "dimensions": "24\"W × 42\"H × 12\"D", "price": 265 },
+          { "sku": "W2730", "dimensions": "27\"W × 30\"H × 12\"D", "price": 220 },
+          { "sku": "W2736", "dimensions": "27\"W × 36\"H × 12\"D", "price": 250 },
+          { "sku": "W2742", "dimensions": "27\"W × 42\"H × 12\"D", "price": 285 },
+          { "sku": "W3030", "dimensions": "30\"W × 30\"H × 12\"D", "price": 240 },
+          { "sku": "W3036", "dimensions": "30\"W × 36\"H × 12\"D", "price": 265 },
+          { "sku": "W3042", "dimensions": "30\"W × 42\"H × 12\"D", "price": 310 },
+          { "sku": "W3330", "dimensions": "33\"W × 30\"H × 12\"D", "price": 255 },
+          { "sku": "W3336", "dimensions": "33\"W × 36\"H × 12\"D", "price": 280 },
+          { "sku": "W3342", "dimensions": "33\"W × 42\"H × 12\"D", "price": 330 },
+          { "sku": "W3630", "dimensions": "36\"W × 30\"H × 12\"D", "price": 265 },
+          { "sku": "W3636", "dimensions": "36\"W × 36\"H × 12\"D", "price": 295 },
+          { "sku": "W3642", "dimensions": "36\"W × 42\"H × 12\"D", "price": 345 }
         ]
       },
       {
-        "group": "Utility Pantry Cabinets – 1 Door",
+        "section": "Wall Cabinets",
+        "group": "Bridge Cabinets",
+        "image": "/images/cabinets/w3018.png",
         "items": [
-          { "sku": "UP2496", "name": "24\" Utility Pantry – 96\" High", "dimensions": "24\"W x 96\"H x 24\"D", "image": "/images/cabinets/up2496.png" },
-          { "sku": "UP3084", "name": "30\" Utility Pantry – 84\" High", "dimensions": "30\"W x 84\"H x 24\"D", "image": "/images/cabinets/up3084.png" },
-          { "sku": "UP3090", "name": "30\" Utility Pantry – 90\" High", "dimensions": "30\"W x 90\"H x 24\"D", "image": "/images/cabinets/up3090.png" },
-          { "sku": "UP3096", "name": "30\" Utility Pantry – 96\" High", "dimensions": "30\"W x 96\"H x 24\"D", "image": "/images/cabinets/up3096.png" }
+          { "sku": "W2424", "dimensions": "24\"W × 24\"H × 12\"D", "price": 180 },
+          { "sku": "W3012", "dimensions": "30\"W × 12\"H × 12\"D", "price": 145 },
+          { "sku": "W3015", "dimensions": "30\"W × 15\"H × 12\"D", "price": 155 },
+          { "sku": "W3018", "dimensions": "30\"W × 18\"H × 12\"D", "price": 165 },
+          { "sku": "W3024", "dimensions": "30\"W × 24\"H × 12\"D", "price": 190 },
+          { "sku": "W3315", "dimensions": "33\"W × 15\"H × 12\"D", "price": 165 },
+          { "sku": "W3324", "dimensions": "33\"W × 24\"H × 12\"D", "price": 205 },
+          { "sku": "W3612", "dimensions": "36\"W × 12\"H × 12\"D", "price": 165 },
+          { "sku": "W3615", "dimensions": "36\"W × 15\"H × 12\"D", "price": 175 },
+          { "sku": "W3618", "dimensions": "36\"W × 18\"H × 12\"D", "price": 185 },
+          { "sku": "W3624", "dimensions": "36\"W × 24\"H × 12\"D", "price": 220 }
         ]
       },
       {
-        "group": "Wall Diagonal Corner",
+        "section": "Wall Cabinets",
+        "group": "Deep Bridge Cabinets",
+        "image": "/images/cabinets/w361224.png",
         "items": [
-          { "sku": "WDC2430", "name": "24\" Wall Diagonal Corner – 30\" High", "dimensions": "24\"W x 30\"H x 12\"D", "image": "/images/cabinets/wdc2430.png" },
-          { "sku": "WDC2430MD", "name": "24\" Wall Diagonal Corner Mullion – 30\" High", "dimensions": "24\"W x 30\"H x 12\"D", "image": "/images/cabinets/wdc2430md.png" },
-          { "sku": "WDC2436", "name": "24\" Wall Diagonal Corner – 36\" High", "dimensions": "24\"W x 36\"H x 12\"D", "image": "/images/cabinets/wdc2436.png" },
-          { "sku": "WDC2436MD", "name": "24\" Wall Diagonal Corner Mullion – 36\" High", "dimensions": "24\"W x 36\"H x 12\"D", "image": "/images/cabinets/wdc2436md.png" },
-          { "sku": "WDC2442", "name": "24\" Wall Diagonal Corner – 42\" High", "dimensions": "24\"W x 42\"H x 12\"D", "image": "/images/cabinets/wdc2442.png" },
-          { "sku": "WDC2442MD", "name": "24\" Wall Diagonal Corner Mullion – 42\" High", "dimensions": "24\"W x 42\"H x 12\"D", "image": "/images/cabinets/wdc2442md.png" },
-          { "sku": "WDC2736", "name": "27\" Wall Diagonal Corner – 36\" High", "dimensions": "27\"W x 36\"H x 12\"D", "image": "/images/cabinets/wdc2736.png" }
+          { "sku": "W361224", "dimensions": "36\"W × 12\"H × 24\"D", "price": 180 },
+          { "sku": "W361824", "dimensions": "36\"W × 18\"H × 24\"D", "price": 210 },
+          { "sku": "W362124", "dimensions": "36\"W × 21\"H × 24\"D", "price": 225 },
+          { "sku": "W362424", "dimensions": "36\"W × 24\"H × 24\"D", "price": 250 }
         ]
       },
       {
-        "group": "Wall End Shelf",
+        "section": "Wall Cabinets",
+        "group": "Diagonal Corner",
+        "image": "/images/cabinets/wdc2436.png",
         "items": [
-          { "sku": "WES0930", "name": "9\" Wall End Shelf – 30\" High", "dimensions": "9\"W x 30\"H x 12\"D", "image": "/images/cabinets/wes0930.png" }
+          { "sku": "WDC2430",   "dimensions": "24\"W × 30\"H × 12\"D", "price": 245 },
+          { "sku": "WDC2430MD", "dimensions": "24\"W × 30\"H × 12\"D — Mullion Door", "price": 245 },
+          { "sku": "WDC2436",   "dimensions": "24\"W × 36\"H × 12\"D", "price": 275 },
+          { "sku": "WDC2436MD", "dimensions": "24\"W × 36\"H × 12\"D — Mullion Door", "price": 275 },
+          { "sku": "WDC2442",   "dimensions": "24\"W × 42\"H × 12\"D", "price": 310 },
+          { "sku": "WDC2442MD", "dimensions": "24\"W × 42\"H × 12\"D — Mullion Door", "price": 300 },
+          { "sku": "WDC2736",   "dimensions": "27\"W × 36\"H × 12\"D", "price": 310 }
+        ]
+      },
+      {
+        "section": "Wall Cabinets",
+        "group": "End Shelf",
+        "image": "/images/cabinets/wes0930.png",
+        "items": [
+          { "sku": "WES0930", "dimensions": "9\"W × 30\"H × 12\"D", "price": 140 },
+          { "sku": "WES0936", "dimensions": "9\"W × 36\"H × 12\"D", "price": 165 },
+          { "sku": "WES0942", "dimensions": "9\"W × 42\"H × 12\"D", "price": 190 },
+          { "sku": "WES1230", "dimensions": "12\"W × 30\"H × 12\"D", "price": 160 },
+          { "sku": "WES1236", "dimensions": "12\"W × 36\"H × 12\"D", "price": 210 },
+          { "sku": "WES1242", "dimensions": "12\"W × 42\"H × 12\"D", "price": 230 }
+        ]
+      },
+      {
+        "section": "Base Cabinets",
+        "group": "1 Door",
+        "image": "/images/cabinets/b21.png",
+        "items": [
+          { "sku": "B12", "dimensions": "12\"W × 34.5\"H × 24\"D", "price": 190 },
+          { "sku": "B15", "dimensions": "15\"W × 34.5\"H × 24\"D", "price": 210 },
+          { "sku": "B21", "dimensions": "21\"W × 34.5\"H × 24\"D", "price": 240 }
+        ]
+      },
+      {
+        "section": "Base Cabinets",
+        "group": "2 Door",
+        "image": "/images/cabinets/b33.png",
+        "items": [
+          { "sku": "B24", "dimensions": "24\"W × 34.5\"H × 24\"D", "price": 265 },
+          { "sku": "B27", "dimensions": "27\"W × 34.5\"H × 24\"D", "price": 285 },
+          { "sku": "B33", "dimensions": "33\"W × 34.5\"H × 24\"D", "price": 355 },
+          { "sku": "B36", "dimensions": "36\"W × 34.5\"H × 24\"D", "price": 370 }
+        ]
+      },
+      {
+        "section": "Base Cabinets",
+        "group": "2 Drawer",
+        "image": "/images/cabinets/2db36.png",
+        "items": [
+          { "sku": "2DB30", "dimensions": "30\"W × 34.5\"H × 24\"D", "price": 410 },
+          { "sku": "2DB36", "dimensions": "36\"W × 34.5\"H × 24\"D", "price": 460 }
+        ]
+      },
+      {
+        "section": "Base Cabinets",
+        "group": "3 Drawer",
+        "image": "/images/cabinets/3db24.png",
+        "items": [
+          { "sku": "3DB12", "dimensions": "12\"W × 34.5\"H × 24\"D", "price": 290 },
+          { "sku": "3DB15", "dimensions": "15\"W × 34.5\"H × 24\"D", "price": 300 },
+          { "sku": "3DB18", "dimensions": "18\"W × 34.5\"H × 24\"D", "price": 315 },
+          { "sku": "3DB21", "dimensions": "21\"W × 34.5\"H × 24\"D", "price": 340 },
+          { "sku": "3DB24", "dimensions": "24\"W × 34.5\"H × 24\"D", "price": 365 },
+          { "sku": "3DB30", "dimensions": "30\"W × 34.5\"H × 24\"D", "price": 410 },
+          { "sku": "3DB36", "dimensions": "36\"W × 34.5\"H × 24\"D", "price": 460 }
+        ]
+      },
+      {
+        "section": "Base Cabinets",
+        "group": "Blind Corner",
+        "image": "/images/cabinets/bbc36.png",
+        "items": [
+          { "sku": "BBC36", "dimensions": "36\"W × 34.5\"H × 24\"D", "price": 295 },
+          { "sku": "BBC42", "dimensions": "42\"W × 34.5\"H × 24\"D", "price": 330 }
+        ]
+      },
+      {
+        "section": "Base Cabinets",
+        "group": "Pull-Out Organizer",
+        "image": "/images/cabinets/bsr09.png",
+        "items": [
+          { "sku": "BSR09", "dimensions": "9\"W × 34.5\"H × 24\"D", "price": 240 }
+        ]
+      },
+      {
+        "section": "Base Cabinets",
+        "group": "Sink Base",
+        "image": "/images/cabinets/sb30.png",
+        "items": [
+          { "sku": "SB24", "dimensions": "24\"W × 34.5\"H × 24\"D", "price": 215 },
+          { "sku": "SB27", "dimensions": "27\"W × 34.5\"H × 24\"D", "price": 228 },
+          { "sku": "SB30", "dimensions": "30\"W × 34.5\"H × 24\"D", "price": 240 },
+          { "sku": "SB33", "dimensions": "33\"W × 34.5\"H × 24\"D", "price": 250 },
+          { "sku": "SB36", "dimensions": "36\"W × 34.5\"H × 24\"D", "price": 260 }
+        ]
+      },
+      {
+        "section": "Pantry Cabinets",
+        "group": "Utility Pantry — 1 Door",
+        "image": "/images/cabinets/up3090.png",
+        "items": [
+          { "sku": "UP2496", "dimensions": "24\"W × 96\"H × 24\"D", "price": 705 },
+          { "sku": "UP3084", "dimensions": "30\"W × 84\"H × 24\"D", "price": 790 },
+          { "sku": "UP3090", "dimensions": "30\"W × 90\"H × 24\"D", "price": 810 },
+          { "sku": "UP3096", "dimensions": "30\"W × 96\"H × 24\"D", "price": 850 }
+        ]
+      },
+      {
+        "section": "Accessories",
+        "group": "Trash Pull-Out",
+        "image": "/images/cabinets/b21tr.png",
+        "items": [
+          { "sku": "B18TR", "dimensions": "18\"W × 34.5\"H × 24\"D", "price": 150 },
+          { "sku": "B21TR", "dimensions": "21\"W × 34.5\"H × 24\"D", "price": 155 }
         ]
       }
     ]

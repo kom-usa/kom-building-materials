@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
@@ -11,6 +11,14 @@ export default function ContactForm() {
     interest: "",
     message: "",
   });
+
+  useEffect(() => {
+    const estimate = localStorage.getItem("kom_estimate");
+    if (estimate) {
+      setFields((prev) => ({ ...prev, message: estimate, interest: "Multiple / Not sure yet" }));
+      localStorage.removeItem("kom_estimate");
+    }
+  }, []);
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
     setFields((prev) => ({ ...prev, [e.target.name]: e.target.value }));

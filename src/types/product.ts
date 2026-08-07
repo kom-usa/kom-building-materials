@@ -16,13 +16,14 @@ export interface LvpColor {
 
 export interface CabinetItem {
   sku: string;
-  name: string;
   dimensions: string;
-  image: string;
+  price?: number;
 }
 
 export interface CabinetGroup {
+  section: string;
   group: string;
+  image: string;
   items: CabinetItem[];
 }
 
