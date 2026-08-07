@@ -119,8 +119,10 @@
         "group": "1 Door",
         "image": "/images/cabinets/b21.png",
         "items": [
+          { "sku": "B09", "dimensions": "9\"W × 34.5\"H × 24\"D", "price": 140 },
           { "sku": "B12", "dimensions": "12\"W × 34.5\"H × 24\"D", "price": 190 },
           { "sku": "B15", "dimensions": "15\"W × 34.5\"H × 24\"D", "price": 210 },
+          { "sku": "B18", "dimensions": "18\"W × 34.5\"H × 24\"D", "price": 225 },
           { "sku": "B21", "dimensions": "21\"W × 34.5\"H × 24\"D", "price": 240 }
         ]
       },
@@ -131,6 +133,7 @@
         "items": [
           { "sku": "B24", "dimensions": "24\"W × 34.5\"H × 24\"D", "price": 265 },
           { "sku": "B27", "dimensions": "27\"W × 34.5\"H × 24\"D", "price": 285 },
+          { "sku": "B30", "dimensions": "30\"W × 34.5\"H × 24\"D", "price": 310 },
           { "sku": "B33", "dimensions": "33\"W × 34.5\"H × 24\"D", "price": 355 },
           { "sku": "B36", "dimensions": "36\"W × 34.5\"H × 24\"D", "price": 370 }
         ]
@@ -181,7 +184,6 @@
         "image": "/images/cabinets/sb30.png",
         "items": [
           { "sku": "SB24", "dimensions": "24\"W × 34.5\"H × 24\"D", "price": 215 },
-          { "sku": "SB27", "dimensions": "27\"W × 34.5\"H × 24\"D", "price": 228 },
           { "sku": "SB30", "dimensions": "30\"W × 34.5\"H × 24\"D", "price": 240 },
           { "sku": "SB33", "dimensions": "33\"W × 34.5\"H × 24\"D", "price": 250 },
           { "sku": "SB36", "dimensions": "36\"W × 34.5\"H × 24\"D", "price": 260 }
@@ -205,6 +207,125 @@
         "items": [
           { "sku": "B18TR", "dimensions": "18\"W × 34.5\"H × 24\"D", "price": 150 },
           { "sku": "B21TR", "dimensions": "21\"W × 34.5\"H × 24\"D", "price": 155 }
+        ]
+      },
+      {
+        "section": "Accessories",
+        "group": "Fillers",
+        "image": "",
+        "items": [
+          { "sku": "SF330", "dimensions": "3\"W × 30\"H — Straight Filler", "price": 25 },
+          { "sku": "SF334", "dimensions": "3\"W × 34.5\"H — Straight Filler", "price": 30 },
+          { "sku": "SF336", "dimensions": "3\"W × 36\"H — Straight Filler", "price": 30 },
+          { "sku": "SF342", "dimensions": "3\"W × 42\"H — Straight Filler", "price": 30 },
+          { "sku": "SF634", "dimensions": "6\"W × 34.5\"H — Straight Filler", "price": 50 },
+          { "sku": "FF330", "dimensions": "3\"W × 30\"H — Fluted Filler", "price": 30 },
+          { "sku": "FF334", "dimensions": "3\"W × 34.5\"H — Fluted Filler", "price": 35 },
+          { "sku": "FF336", "dimensions": "3\"W × 36\"H — Fluted Filler", "price": 35 },
+          { "sku": "FF342", "dimensions": "3\"W × 42\"H — Fluted Filler", "price": 40 }
+        ]
+      },
+      {
+        "section": "Accessories",
+        "group": "Toe Kick",
+        "image": "",
+        "items": [
+          { "sku": "TK96", "dimensions": "1/4\"T × 96\"L × 4.5\"H", "price": 25 }
+        ]
+      },
+      {
+        "section": "Accessories",
+        "group": "Refrigerator Panel",
+        "image": "",
+        "items": [
+          { "sku": "REFPNL24", "dimensions": "24\"D × 96\"H × 3/4\" thick", "price": 125 }
+        ]
+      },
+      {
+        "section": "Accessories",
+        "group": "End Panels",
+        "image": "",
+        "items": [
+          { "sku": "WEP1230", "dimensions": "12\"W × 30\"H — Wall End Panel", "price": 75 },
+          { "sku": "WEP1236", "dimensions": "12\"W × 36\"H — Wall End Panel", "price": 85 },
+          { "sku": "WEP1242", "dimensions": "12\"W × 42\"H — Wall End Panel", "price": 95 },
+          { "sku": "BEP2430", "dimensions": "24\"W × 30\"H — Base End Panel", "price": 120 }
+        ]
+      },
+      {
+        "section": "Specialty Cabinets",
+        "group": "Oven Cabinets",
+        "image": "",
+        "items": [
+          { "sku": "OC3084", "dimensions": "30\"W × 84\"H × 24\"D", "price": 830 },
+          { "sku": "OC3090", "dimensions": "30\"W × 90\"H × 24\"D", "price": 860 },
+          { "sku": "OC3096", "dimensions": "30\"W × 96\"H × 24\"D", "price": 890 },
+          { "sku": "OC3384", "dimensions": "33\"W × 84\"H × 24\"D", "price": 830 },
+          { "sku": "OC3390", "dimensions": "33\"W × 90\"H × 24\"D", "price": 860 },
+          { "sku": "OC3396", "dimensions": "33\"W × 96\"H × 24\"D", "price": 890 }
+        ]
+      },
+      {
+        "section": "Specialty Cabinets",
+        "group": "Microwave Cabinet",
+        "image": "",
+        "items": [
+          { "sku": "MC3018", "dimensions": "30\"W × 18\"H × 18\"D", "price": 135 }
+        ]
+      },
+      {
+        "section": "Specialty Cabinets",
+        "group": "Lazy Susan",
+        "image": "",
+        "items": [
+          { "sku": "LS33", "dimensions": "33\" × 33\" × 24\"D — Cabinet", "price": 345 },
+          { "sku": "LS36", "dimensions": "36\" × 36\" × 24\"D — Cabinet", "price": 380 },
+          { "sku": "LS33KIT", "dimensions": "Lazy Susan Kit — fits LS33", "price": 145 },
+          { "sku": "LS36KIT", "dimensions": "Lazy Susan Kit — fits LS36", "price": 140 }
+        ]
+      },
+      {
+        "section": "Specialty Cabinets",
+        "group": "Diagonal Sink Base",
+        "image": "",
+        "items": [
+          { "sku": "DSNK36", "dimensions": "36\"W × 34.5\"H × 24\"D", "price": 325 },
+          { "sku": "DSNK42", "dimensions": "42\"W × 34.5\"H × 24\"D", "price": 370 }
+        ]
+      },
+      {
+        "section": "Specialty Cabinets",
+        "group": "Wall Blind Corner",
+        "image": "",
+        "items": [
+          { "sku": "WBC2430", "dimensions": "24\"W × 30\"H × 12\"D", "price": 195 },
+          { "sku": "WBC2436", "dimensions": "24\"W × 36\"H × 12\"D", "price": 220 },
+          { "sku": "WBC2442", "dimensions": "24\"W × 42\"H × 12\"D", "price": 255 }
+        ]
+      },
+      {
+        "section": "Vanity Cabinets",
+        "group": "Vanity Base",
+        "image": "",
+        "items": [
+          { "sku": "VB12", "dimensions": "12\"W × 34.5\"H × 21\"D", "price": 275 },
+          { "sku": "VB15", "dimensions": "15\"W × 34.5\"H × 21\"D", "price": 290 },
+          { "sku": "VB18", "dimensions": "18\"W × 34.5\"H × 21\"D", "price": 310 },
+          { "sku": "VB21", "dimensions": "21\"W × 34.5\"H × 21\"D", "price": 350 },
+          { "sku": "VB24", "dimensions": "24\"W × 34.5\"H × 21\"D", "price": 380 }
+        ]
+      },
+      {
+        "section": "Vanity Cabinets",
+        "group": "Vanity Combination",
+        "image": "",
+        "items": [
+          { "sku": "VC30", "dimensions": "30\"W × 34.5\"H × 21\"D", "price": 325 },
+          { "sku": "VC36", "dimensions": "36\"W × 34.5\"H × 21\"D", "price": 360 },
+          { "sku": "VC42", "dimensions": "42\"W × 34.5\"H × 21\"D", "price": 430 },
+          { "sku": "VC48", "dimensions": "48\"W × 34.5\"H × 21\"D", "price": 555 },
+          { "sku": "VC60", "dimensions": "60\"W × 34.5\"H × 21\"D", "price": 575 },
+          { "sku": "VC72", "dimensions": "72\"W × 34.5\"H × 21\"D", "price": 760 }
         ]
       }
     ]

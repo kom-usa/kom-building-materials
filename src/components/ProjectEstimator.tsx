@@ -21,7 +21,7 @@ interface Props {
   countertopProducts: Product[];
 }
 
-const CABINET_SECTIONS = ["Wall Cabinets", "Base Cabinets", "Pantry Cabinets", "Accessories"];
+const CABINET_SECTIONS = ["Wall Cabinets", "Base Cabinets", "Pantry Cabinets", "Accessories", "Specialty Cabinets", "Vanity Cabinets"];
 
 export default function ProjectEstimator({ lvpProducts, hardwoodProducts, cabinetCatalog }: Props) {
   const router = useRouter();

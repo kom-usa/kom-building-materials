@@ -20,7 +20,7 @@ const features = [
   { heading: "Full Overlay Shaker", body: "Modern full overlay Shaker style covers the face frame for a sleek, seamless look." },
 ];
 
-const sections = ["Wall Cabinets", "Base Cabinets", "Pantry Cabinets", "Accessories"];
+const sections = ["Wall Cabinets", "Base Cabinets", "Pantry Cabinets", "Accessories", "Specialty Cabinets", "Vanity Cabinets"];
 
 export default function CabinetsPage() {
   const groupsBySection = sections.map((section) => ({
