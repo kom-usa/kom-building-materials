@@ -99,6 +99,7 @@ export default function CabinetsPage() {
                             <tr className="border-b border-gray-100">
                               <th className="text-left py-1.5 pr-4 font-semibold text-[var(--color-muted)] uppercase tracking-wide">SKU</th>
                               <th className="text-left py-1.5 font-semibold text-[var(--color-muted)] uppercase tracking-wide">Dimensions</th>
+                              <th className="text-right py-1.5 font-semibold text-[var(--color-muted)] uppercase tracking-wide">Price</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -109,6 +110,9 @@ export default function CabinetsPage() {
                               >
                                 <td className="py-1.5 pr-4 font-mono text-[var(--color-text)] whitespace-nowrap">{item.sku}</td>
                                 <td className="py-1.5 text-[var(--color-muted)]">{item.dimensions}</td>
+                                <td className="py-1.5 text-right font-medium text-[var(--color-brand-green)] whitespace-nowrap">
+                                  {item.price ? `$${item.price.toLocaleString()}` : "—"}
+                                </td>
                               </tr>
                             ))}
                           </tbody>

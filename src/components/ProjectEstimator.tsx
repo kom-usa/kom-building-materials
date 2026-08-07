@@ -23,7 +23,7 @@ interface Props {
 
 const CABINET_SECTIONS = ["Wall Cabinets", "Base Cabinets", "Pantry Cabinets", "Accessories", "Specialty Cabinets", "Vanity Cabinets"];
 
-export default function ProjectEstimator({ lvpProducts, hardwoodProducts, cabinetCatalog }: Props) {
+export default function ProjectEstimator({ lvpProducts, hardwoodProducts, cabinetCatalog, countertopProducts }: Props) {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState<"lvp" | "hardwood" | "cabinets" | "countertops">("cabinets");
   const [activeCabinetSection, setActiveCabinetSection] = useState("Wall Cabinets");
@@ -304,12 +304,41 @@ export default function ProjectEstimator({ lvpProducts, hardwoodProducts, cabine
 
           {/* ── Countertops ── */}
           {activeTab === "countertops" && (
-            <div className="rounded-xl border-2 border-dashed border-gray-200 p-12 text-center">
-              <p className="text-2xl mb-3">🪨</p>
-              <h3 className="font-semibold text-[var(--color-text)]">Countertops Coming Soon</h3>
-              <p className="mt-2 text-sm text-[var(--color-muted)] max-w-sm mx-auto">
-                Countertop pricing and options are being finalized. Once added, they&apos;ll appear here and work seamlessly with the rest of your estimate.
-              </p>
+            <div>
+              <p className="text-xs text-[var(--color-muted)] mb-5">Enter square footage for each material and click Add. Sink cutout included in quartz pricing.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                {countertopProducts.filter((p) => p.priceUnit === "per-sqft").map((p) => (
+                  <div key={p.sku} className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                    {p.image && (
+                      <div className="relative aspect-[16/7] bg-gray-50">
+                        <Image src={p.image} alt={p.name} fill className="object-cover" sizes="(max-width: 640px) 100vw, 50vw" />
+                      </div>
+                    )}
+                    <div className="p-4">
+                      <p className="font-semibold text-[var(--color-text)] text-sm">{p.name}</p>
+                      <p className="text-xs text-[var(--color-muted)] mt-0.5">{p.dimensions}</p>
+                      <p className="mt-1 text-sm font-bold text-[var(--color-brand-green)]">${p.price.toFixed(2)} <span className="text-xs font-normal text-[var(--color-muted)]">/ sqft</span></p>
+                      <p className="text-xs text-[var(--color-muted)] mt-1 leading-relaxed">{p.notes}</p>
+                      <div className="mt-3 flex gap-2">
+                        <input
+                          type="number"
+                          min="1"
+                          placeholder="Sqft"
+                          value={sqftInputs[p.sku] ?? ""}
+                          onChange={(e) => setSqftInputs((prev) => ({ ...prev, [p.sku]: e.target.value }))}
+                          className="w-24 rounded border border-gray-200 px-2 py-1.5 text-sm focus:outline-none focus:border-[var(--color-brand-green)]"
+                        />
+                        <button
+                          onClick={() => handleAddFlooring(p)}
+                          className="flex-1 rounded bg-[var(--color-brand-green)] px-3 py-1.5 text-xs font-semibold text-white hover:bg-[var(--color-brand-dark)] transition-colors"
+                        >
+                          + Add to Estimate
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
         </div>
