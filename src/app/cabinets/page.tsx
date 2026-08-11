@@ -212,8 +212,8 @@ export default function CabinetsPage() {
                             <>
                               <p className="text-xs font-medium text-[var(--color-muted)] mb-1.5">Available sizes:</p>
                               <div className="flex flex-wrap gap-1.5">
-                                {fullDims.map((d) => (
-                                  <span key={d} className="text-xs bg-gray-100 text-[var(--color-text)] px-2 py-1 rounded">{d}</span>
+                                {fullDims.map((d, i) => (
+                                  <span key={i} className="text-xs bg-gray-100 text-[var(--color-text)] px-2 py-1 rounded">{d}</span>
                                 ))}
                               </div>
                             </>
