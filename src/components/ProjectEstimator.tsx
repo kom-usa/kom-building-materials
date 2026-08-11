@@ -69,7 +69,7 @@ export default function ProjectEstimator({ lvpProducts, hardwoodProducts, cabine
   function handleAddCabinet(item: { sku: string; dimensions: string; price?: number }, groupImage: string, groupName: string) {
     addToCart({
       sku: item.sku,
-      name: `${item.sku} — ${item.dimensions}`,
+      name: `${groupName} — ${item.dimensions}`,
       image: groupImage,
       price: item.price ?? 0,
       priceUnit: "per-unit",
@@ -262,8 +262,7 @@ export default function ProjectEstimator({ lvpProducts, hardwoodProducts, cabine
                       <table className="w-full text-xs">
                         <thead>
                           <tr className="border-b border-gray-50">
-                            <th className="text-left px-4 py-2 font-semibold text-[var(--color-muted)] uppercase tracking-wide">SKU</th>
-                            <th className="text-left px-2 py-2 font-semibold text-[var(--color-muted)] uppercase tracking-wide">Dimensions</th>
+                            <th className="text-left px-4 py-2 font-semibold text-[var(--color-muted)] uppercase tracking-wide">Size</th>
                             <th className="text-right px-2 py-2 font-semibold text-[var(--color-muted)] uppercase tracking-wide">Price</th>
                             <th className="px-3 py-2 w-10"></th>
                           </tr>
@@ -273,8 +272,7 @@ export default function ProjectEstimator({ lvpProducts, hardwoodProducts, cabine
                             const inCart = cart.find((c) => c.sku === item.sku);
                             return (
                               <tr key={item.sku} className={`border-b border-gray-50 last:border-0 ${idx % 2 === 0 ? "" : "bg-gray-50/30"}`}>
-                                <td className="px-4 py-2 font-mono text-[var(--color-text)] whitespace-nowrap">{item.sku}</td>
-                                <td className="px-2 py-2 text-[var(--color-muted)]">{item.dimensions}</td>
+                                <td className="px-4 py-2 text-[var(--color-text)]">{item.dimensions}</td>
                                 <td className="px-2 py-2 text-right font-medium text-[var(--color-text)] whitespace-nowrap">
                                   {item.price ? `$${item.price}` : "—"}
                                 </td>

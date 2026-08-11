@@ -6,104 +6,83 @@ import countertopsData from "@/data/countertops.json";
 export const metadata: Metadata = {
   title: "Countertops",
   description:
-    "Quartz, granite, and butcher block countertops. Fabricated and installed to your exact measurements. Browse options in our Redford Township showroom.",
+    "Quartz countertops fabricated to your exact measurements. Includes standard sink cutout. Browse options and get pricing in our Project Estimator.",
 };
 
 const countertops = countertopsData as Product[];
 
-const materialGuide = [
-  {
-    material: "Quartz",
-    summary: "Non-porous, never needs sealing. Consistent appearance, extremely durable. Best for busy kitchens.",
-    best: "Best for: Kitchens, heavy daily use",
-  },
-  {
-    material: "Granite",
-    summary: "Natural stone — every slab is unique. Needs sealing once a year. Adds real value to a home.",
-    best: "Best for: Buyers who want a one-of-a-kind look",
-  },
-  {
-    material: "Butcher Block",
-    summary: "Warm, natural, refinishable. Not waterproof without treatment — keep away from sinks or seal carefully.",
-    best: "Best for: Islands, baking areas, farmhouse kitchens",
-  },
+const quartzBenefits = [
+  { heading: "Non-Porous", body: "Won't absorb spills, bacteria, or stains. Never needs sealing." },
+  { heading: "Low Maintenance", body: "Wipe clean with soap and water. No annual treatment required." },
+  { heading: "Extremely Durable", body: "One of the hardest countertop surfaces available. Resists scratching and chipping." },
+  { heading: "Sink Cutout Included", body: "Standard undermount or drop-in sink cutout included with every order." },
 ];
 
 export default function CountertopsPage() {
-  const featured = countertops;
-
   return (
     <>
       {/* Hero */}
       <section className="bg-[var(--color-brand-green)] text-white py-14 px-4">
         <div className="mx-auto max-w-4xl">
           <p className="text-sm text-[var(--color-brand-dark)] font-semibold mb-2">Products</p>
-          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Countertops</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Quartz Countertops</h1>
           <p className="mt-4 text-white/80 text-base leading-relaxed max-w-2xl">
-            Quartz, granite, and butcher block — fabricated to your exact kitchen dimensions.
-            Pricing is per square foot and includes standard edge profiles. Come in to see the slabs in person
-            before making a final decision on natural stone.
+            We sell quartz countertops fabricated to your exact kitchen dimensions. Priced per square foot
+            with standard sink cutout included. Come in to see color samples at our Redford Township showroom.
           </p>
           <Link
             href="/project-builder"
             className="mt-6 inline-block rounded bg-[var(--color-brand-dark)] px-6 py-3 text-sm font-semibold text-white hover:bg-black transition-colors"
           >
-            Add to Project Builder →
+            Get a Price Estimate →
           </Link>
         </div>
       </section>
 
-      {/* Material guide */}
+      {/* Why Quartz */}
       <section className="py-12 px-4 bg-white border-b border-gray-100">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="text-lg font-semibold text-[var(--color-text)] mb-6">Which material is right for you?</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {materialGuide.map((m) => (
-              <div key={m.material} className="border border-gray-100 rounded-lg p-5">
-                <h3 className="font-semibold text-[var(--color-brand-green)]">{m.material}</h3>
-                <p className="mt-2 text-sm text-[var(--color-muted)] leading-relaxed">{m.summary}</p>
-                <p className="mt-2 text-xs font-medium text-[var(--color-brand-green)]">{m.best}</p>
-              </div>
-            ))}
-          </div>
+        <div className="mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {quartzBenefits.map((b) => (
+            <div key={b.heading}>
+              <h3 className="font-semibold text-[var(--color-brand-green)] text-sm">{b.heading}</h3>
+              <p className="mt-1 text-sm text-[var(--color-muted)] leading-relaxed">{b.body}</p>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* Product grid */}
+      {/* Product */}
       <section className="py-14 px-4 bg-[var(--color-background)]">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-xl font-bold text-[var(--color-text)] mb-8">Featured Countertops</h2>
+          <h2 className="text-xl font-bold text-[var(--color-text)] mb-8">Available Now</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featured.map((product) => (
+            {countertops.map((product) => (
               <div key={product.sku} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
                 <div className="h-48 bg-gray-100 flex items-center justify-center text-gray-300 text-sm">
                   Photo coming soon
                 </div>
                 <div className="p-5">
-                  <p className="text-xs text-[var(--color-muted)] font-mono mb-1">{product.sku}</p>
                   <h3 className="font-semibold text-[var(--color-text)]">{product.name}</h3>
-                  <p className="text-xs text-[var(--color-muted)] mt-0.5">{product.manufacturer}</p>
-                  <p className="mt-2 text-sm text-[var(--color-muted)] leading-relaxed line-clamp-3">
+                  <p className="mt-2 text-sm text-[var(--color-muted)] leading-relaxed">
                     {product.description}
                   </p>
+                  <p className="mt-3 text-xs text-[var(--color-muted)] italic">{product.notes}</p>
                   <div className="mt-4 flex items-center justify-between">
                     <span className="text-lg font-bold text-[var(--color-brand-green)]">
                       ${product.price}
-                      <span className="text-xs font-normal text-[var(--color-muted)] ml-1">{product.priceUnit.replace("-", " ")}</span>
+                      <span className="text-xs font-normal text-[var(--color-muted)] ml-1">/ sqft</span>
                     </span>
-                    <span className={`text-xs font-medium px-2 py-1 rounded-full ${
-                      product.status === "in-stock"
-                        ? "bg-green-50 text-green-700"
-                        : "bg-yellow-50 text-yellow-700"
-                    }`}>
-                      {product.status === "in-stock" ? "In Stock" : "Special Order"}
+                    <span className="text-xs font-medium px-2 py-1 rounded-full bg-green-50 text-green-700">
+                      In Stock
                     </span>
                   </div>
-                  <p className="mt-2 text-xs text-[var(--color-muted)]">{product.leadTime}</p>
                 </div>
               </div>
             ))}
           </div>
+          <p className="mt-6 text-sm text-[var(--color-muted)] max-w-xl">
+            Full color and edge profile catalog available in our showroom. Pricing confirmed after measurement — use the Project Estimator for a rough square footage estimate.
+          </p>
         </div>
       </section>
 
@@ -112,11 +91,11 @@ export default function CountertopsPage() {
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-xl font-bold text-[var(--color-text)]">Ready to measure and order?</h2>
           <p className="mt-2 text-sm text-[var(--color-muted)]">
-            Bring your kitchen measurements and we&apos;ll give you an accurate quote. Natural stone slabs are available to view in person.
+            Bring your kitchen measurements and we&apos;ll give you an accurate quote. Color samples are available in person.
           </p>
           <div className="mt-5 flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/project-builder" className="rounded bg-[var(--color-brand-green)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--color-brand-green-dark)] transition-colors">
-              Build Your Project
+              Build Your Estimate
             </Link>
             <Link href="/contact" className="rounded border border-gray-200 px-6 py-3 text-sm font-semibold text-[var(--color-text)] hover:bg-gray-50 transition-colors">
               Contact Us

@@ -9,12 +9,18 @@ export const metadata: Metadata = {
 };
 
 const defaultValues = [
-  { heading: "Transparency", body: "We tell you what things cost and why. No hidden fees, no inflated MSRP to discount from." },
-  { heading: "Education First", body: "We explain the difference between plywood and particle board, quartz and granite, LVP thicknesses — because an informed customer makes better decisions." },
-  { heading: "Personal Guidance", body: "You talk to the same person from first visit through delivery. No call centers, no ticket systems." },
-  { heading: "Veteran Values", body: "Founded on the same principles we carried in uniform: integrity, accountability, and taking care of the people in front of us." },
-  { heading: "No Pressure", body: "We're here to help you make a good decision for your project, not to hit a sales number. Take your time." },
-  { heading: "Quality Products", body: "We only carry products we'd put in our own homes — from manufacturers with real warranties and real quality control." },
+  {
+    heading: "Transparency & Fair Pricing",
+    body: "We tell you what things actually cost and why — no inflated MSRP, no hidden fees, no pressure. The price you see reflects real market value, not a number designed to be discounted later.",
+  },
+  {
+    heading: "Expert Guidance & Education",
+    body: "We explain the difference between plywood and particle board, quartz and granite, LVP thicknesses — because an informed customer makes better decisions. You talk to the same person from first visit through delivery. No call centers, no ticket systems.",
+  },
+  {
+    heading: "Quality & Integrity",
+    body: "We only carry products we'd put in our own homes — from manufacturers with real warranties and real quality control. Founded on the principles we carried in uniform: accountability and taking care of the people in front of us.",
+  },
 ];
 
 export default async function AboutPage() {

@@ -4,29 +4,14 @@
     "category": "countertops",
     "name": "Quartz Countertop",
     "manufacturer": "KOM Building Materials",
-    "description": "Professional-grade quartz countertops — durable, non-porous, and low maintenance. Includes standard sink cutout. Full color catalog available — contact us for samples and slab selection.",
+    "description": "Professional-grade quartz countertops — durable, non-porous, and low maintenance. Standard sink cutout included. Full color catalog available — contact us for samples and slab selection.",
     "dimensions": "Custom — priced per square foot",
     "image": "",
     "price": 60,
     "priceUnit": "per-sqft",
     "status": "in-stock",
     "leadTime": "Contact us for current lead times",
-    "notes": "Price includes standard sink cutout ($200 value). Full catalog of colors and edge profiles available. Contact KOM for a detailed quote.",
+    "notes": "Standard sink cutout included at no extra charge. Contact KOM for a full quote including edge profiles and installation.",
     "featured": true
-  },
-  {
-    "sku": "CTRSINKCUTOUT",
-    "category": "countertops",
-    "name": "Sink Cutout (Add-On)",
-    "manufacturer": "KOM Building Materials",
-    "description": "Standard undermount or drop-in sink cutout. Included at no extra charge with quartz orders — listed separately for estimate transparency.",
-    "dimensions": "Standard sink opening",
-    "image": "",
-    "price": 200,
-    "priceUnit": "per-unit",
-    "status": "in-stock",
-    "leadTime": "Included with countertop order",
-    "notes": "Sink cutout is included in quartz countertop pricing. Listed here for itemized estimate visibility.",
-    "featured": false
   }
 ]

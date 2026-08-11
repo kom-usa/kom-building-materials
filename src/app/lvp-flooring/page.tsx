@@ -84,26 +84,47 @@ export default function LvpFlooringPage() {
       </section>
 
       {/* Collections */}
-      {collections.map((collection) => (
+      {collections.map((collection) => {
+        // Parse dimension string: "48\" L x 7\" W — 5.2mm total — 20mil wear layer"
+        const dimMatch = collection.dimensions.match(/(\d+)" L x (\d+)" W — ([\d.]+)mm total — (\d+)mil wear/);
+        const padMatch = collection.notes?.match(/([\d.]+)mm soft acoustic pad/);
+        const specs = dimMatch ? [
+          { label: "Plank Size",    value: `${dimMatch[1]}" × ${dimMatch[2]}"` },
+          { label: "Thickness",     value: `${dimMatch[3]}mm` },
+          { label: "Wear Layer",    value: `${dimMatch[4]}mil` },
+          { label: "Per Carton",    value: collection.sqftPerCarton ? `${collection.sqftPerCarton} sqft` : "—" },
+          { label: "Underlayment",  value: padMatch ? `${padMatch[1]}mm pre-attached` : "None" },
+          { label: "Install",       value: "Click-lock floating" },
+        ] : [];
+
+        return (
         <section
           key={collection.sku}
           className="py-14 px-4 border-t border-gray-100 odd:bg-white even:bg-[var(--color-background)]"
         >
           <div className="mx-auto max-w-7xl">
             {/* Collection header */}
-            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-8">
-              <div>
+            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-8">
+              <div className="flex-1">
                 <h2 className="text-xl font-bold text-[var(--color-text)]">{collection.name}</h2>
-                <p className="mt-1 text-sm text-[var(--color-muted)]">{collection.dimensions}</p>
-                {collection.sqftPerCarton && (
-                  <p className="text-xs text-[var(--color-muted)] mt-0.5">{collection.sqftPerCarton} sqft per carton</p>
+                <p className="mt-1 text-sm text-[var(--color-muted)] max-w-xl">{collection.description}</p>
+                {specs.length > 0 && (
+                  <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-2">
+                    {specs.map((s) => (
+                      <div key={s.label} className="flex items-baseline gap-1.5">
+                        <span className="text-xs font-semibold text-[var(--color-muted)] uppercase tracking-wide whitespace-nowrap">{s.label}</span>
+                        <span className="text-xs font-bold text-[var(--color-text)]">{s.value}</span>
+                      </div>
+                    ))}
+                  </div>
                 )}
               </div>
-              <div className="text-right shrink-0">
+              <div className="text-left sm:text-right shrink-0">
                 <span className="text-2xl font-bold text-[var(--color-brand-green)]">
                   ${collection.price.toFixed(2)}
                 </span>
                 <span className="text-sm text-[var(--color-muted)] ml-1">/ sqft</span>
+                <p className="text-xs text-[var(--color-muted)] mt-0.5">In stock — take home today</p>
               </div>
             </div>
 
@@ -147,7 +168,8 @@ export default function LvpFlooringPage() {
             </div>
           </div>
         </section>
-      ))}
+        );
+      })}
 
       {/* CTA */}
       <section className="py-12 px-4 bg-[var(--color-brand-green)] text-white">
