@@ -3,9 +3,9 @@ import Image from "next/image";
 import { getFeaturedTestimonials, getFeaturedGallery, getSiteSettings } from "@/sanity/lib/queries";
 
 const categories = [
-  { label: "Cabinets", href: "/cabinets", description: "Mercury White Full Overlay Shaker cabinets. Plywood box, soft-close hinges, in a full range of sizes.", icon: "🪵", image: "" },
-  { label: "Countertops", href: "/countertops", description: "Quartz countertops fabricated to your exact measurements. Sink cutout included.", icon: "◻️", image: "" },
-  { label: "LVP Flooring", href: "/lvp-flooring", description: "100% waterproof luxury vinyl plank. 4 collections, pet-friendly, kid-friendly, budget-friendly.", icon: "🏠", image: "" },
+  { label: "Cabinets", href: "/cabinets", description: "Mercury White Full Overlay Shaker cabinets. Plywood box, soft-close hinges, in a full range of sizes.", icon: "🪵", image: "/images/icon-cabinets.jpg" },
+  { label: "Countertops", href: "/countertops", description: "Quartz countertops fabricated to your exact measurements. Sink cutout included.", icon: "◻️", image: "/images/icon-countertops.webp" },
+  { label: "LVP Flooring", href: "/lvp-flooring", description: "100% waterproof luxury vinyl plank. 4 collections, pet-friendly, kid-friendly, budget-friendly.", icon: "🏠", image: "/images/icon-lvp.webp" },
   { label: "Hardwood Flooring", href: "/hardwood-flooring", description: "Unfinished Red Oak solid hardwood in 4 widths. Refinishable and built to last.", icon: "🌲", image: "/images/hardwood/hardwood-room-hero.webp" },
 ];
 
@@ -29,37 +29,36 @@ export default async function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[var(--color-brand-green)] text-white overflow-hidden">
-        <div className="mx-auto max-w-7xl flex flex-col lg:flex-row items-stretch">
-          {/* Text */}
-          <div className="flex-1 flex flex-col justify-center py-16 px-6 lg:px-12">
-            <h1 className="text-4xl sm:text-5xl font-bold leading-tight tracking-tight">
-              Kitchen &amp; Floor Materials,{" "}
-              <span className="text-[var(--color-brand-dark)]">Without the Middleman</span>
-            </h1>
-            <p className="mt-5 text-lg text-white/90 max-w-xl leading-relaxed">
-              Cabinets, countertops, LVP, and hardwood flooring — displayed in our Redford Township showroom.
-              Browse, plan, and request a quote online or in person.
-            </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <Link href="/project-builder" className="rounded bg-[var(--color-brand-dark)] px-7 py-3.5 text-base font-semibold text-white shadow hover:bg-black transition-colors">
-                Build Your Project
-              </Link>
-              <Link href="/contact" className="rounded border border-white/40 px-7 py-3.5 text-base font-semibold text-white hover:bg-white/10 transition-colors">
-                Visit the Showroom
-              </Link>
-            </div>
-          </div>
-          {/* Hero photo */}
-          <div className="relative w-full lg:w-[520px] shrink-0 h-72 lg:h-auto">
-            <Image
-              src="/images/hero.png"
-              alt="KOM Building Materials showroom"
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 520px"
-              priority
-            />
+      <section className="relative text-white overflow-hidden min-h-[480px] flex items-center">
+        {/* Background image */}
+        <Image
+          src="/images/hero-kitchen.avif"
+          alt="KOM Building Materials showroom kitchen"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/55" />
+        {/* Content */}
+        <div className="relative z-10 mx-auto max-w-4xl px-6 py-20 text-center">
+          <h1 className="text-4xl sm:text-5xl font-bold leading-tight tracking-tight">
+            Kitchen &amp; Floor Materials,
+            <br />
+            <span className="text-[var(--color-brand-green)]">Without the Middleman</span>
+          </h1>
+          <p className="mt-5 text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
+            Cabinets, countertops, LVP, and hardwood flooring — displayed in our Redford Township showroom.
+            Browse, plan, and request a quote online or in person.
+          </p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+            <Link href="/project-builder" className="rounded bg-[var(--color-brand-dark)] px-7 py-3.5 text-base font-semibold text-white shadow hover:bg-black transition-colors">
+              Build Your Project
+            </Link>
+            <Link href="/contact" className="rounded border border-white/40 px-7 py-3.5 text-base font-semibold text-white hover:bg-white/10 transition-colors">
+              Visit the Showroom
+            </Link>
           </div>
         </div>
       </section>
