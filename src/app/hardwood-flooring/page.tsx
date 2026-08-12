@@ -13,28 +13,28 @@ const widths = [
     sku: "HWD-001",
     width: "2 1/4\"",
     description: "Classic narrow width. Ideal for smaller rooms and traditional aesthetics. Minimal knots — ready to stain to any finish.",
-    image: "/images/hardwood/hardwood-photo.webp",
+    image: "/images/hardwood/hw-2-25.webp",
     best: "Best for: traditional homes, smaller rooms",
   },
   {
     sku: "HWD-002",
     width: "3 1/4\"",
     description: "The most popular width. Versatile and balanced — works in virtually any room and complements any home style.",
-    image: "/images/hardwood/hardwood-layout.webp",
+    image: "/images/hardwood/hw-3-25.avif",
     best: "Best for: most homes, any room",
   },
   {
     sku: "HWD-003",
     width: "4\"",
     description: "Wider plank with a modern feel. Makes rooms appear larger and shows more of the natural wood grain.",
-    image: "/images/hardwood/hardwood-closeup.jpg",
+    image: "/images/hardwood/hw-4.avif",
     best: "Best for: contemporary and transitional spaces",
   },
   {
     sku: "HWD-004",
     width: "5\"",
     description: "Bold wide-plank look. Perfect for open-concept spaces and delivers a premium high-end finish.",
-    image: "/images/hardwood/hardwood-bundle.webp",
+    image: "/images/hardwood/hw-5.webp",
     best: "Best for: open-concept, upscale finishes",
   },
 ];
@@ -118,7 +118,12 @@ export default function HardwoodFlooringPage() {
                   <p className="mt-1 text-sm text-[var(--color-muted)] leading-snug">{w.description}</p>
                   <p className="mt-2 text-xs font-medium text-[var(--color-brand-green)]">{w.best}</p>
                   <div className="mt-auto pt-3">
-                    <span className="text-xs text-[var(--color-muted)]">Call for availability</span>
+                    <a
+                      href="tel:3135591888"
+                      className="block text-center text-xs font-semibold text-white bg-[var(--color-brand-green)] rounded py-2 hover:bg-[var(--color-brand-dark)] transition-colors"
+                    >
+                      Call for Availability
+                    </a>
                   </div>
                 </div>
               </div>

@@ -29,23 +29,37 @@ export default async function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[var(--color-brand-green)] text-white py-20 px-4">
-        <div className="mx-auto max-w-4xl text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold leading-tight tracking-tight">
-            Kitchen &amp; Floor Materials,{" "}
-            <span className="text-[var(--color-brand-dark)]">Without the Middleman</span>
-          </h1>
-          <p className="mt-5 text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Cabinets, countertops, LVP, and hardwood flooring — displayed in our Redford Township showroom.
-            Browse, plan, and request a quote online or in person.
-          </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-            <Link href="/project-builder" className="rounded bg-[var(--color-brand-dark)] px-7 py-3.5 text-base font-semibold text-white shadow hover:bg-black transition-colors">
-              Build Your Project
-            </Link>
-            <Link href="/contact" className="rounded border border-white/40 px-7 py-3.5 text-base font-semibold text-white hover:bg-white/10 transition-colors">
-              Visit the Showroom
-            </Link>
+      <section className="bg-[var(--color-brand-green)] text-white overflow-hidden">
+        <div className="mx-auto max-w-7xl flex flex-col lg:flex-row items-stretch">
+          {/* Text */}
+          <div className="flex-1 flex flex-col justify-center py-16 px-6 lg:px-12">
+            <h1 className="text-4xl sm:text-5xl font-bold leading-tight tracking-tight">
+              Kitchen &amp; Floor Materials,{" "}
+              <span className="text-[var(--color-brand-dark)]">Without the Middleman</span>
+            </h1>
+            <p className="mt-5 text-lg text-white/90 max-w-xl leading-relaxed">
+              Cabinets, countertops, LVP, and hardwood flooring — displayed in our Redford Township showroom.
+              Browse, plan, and request a quote online or in person.
+            </p>
+            <div className="mt-8 flex flex-col sm:flex-row gap-3">
+              <Link href="/project-builder" className="rounded bg-[var(--color-brand-dark)] px-7 py-3.5 text-base font-semibold text-white shadow hover:bg-black transition-colors">
+                Build Your Project
+              </Link>
+              <Link href="/contact" className="rounded border border-white/40 px-7 py-3.5 text-base font-semibold text-white hover:bg-white/10 transition-colors">
+                Visit the Showroom
+              </Link>
+            </div>
+          </div>
+          {/* Hero photo */}
+          <div className="relative w-full lg:w-[520px] shrink-0 h-72 lg:h-auto">
+            <Image
+              src="/images/hero.png"
+              alt="KOM Building Materials showroom"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 520px"
+              priority
+            />
           </div>
         </div>
       </section>
