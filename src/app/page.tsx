@@ -3,10 +3,10 @@ import Image from "next/image";
 import { getFeaturedTestimonials, getFeaturedGallery, getSiteSettings } from "@/sanity/lib/queries";
 
 const categories = [
-  { label: "Cabinets", href: "/cabinets", description: "Shaker, raised-panel, and modern styles. Soft-close hinges and dovetail drawers standard.", icon: "🪵" },
-  { label: "Countertops", href: "/countertops", description: "Quartz, granite, and butcher block. Fabricated and installed to your exact measurements.", icon: "◻️" },
-  { label: "LVP Flooring", href: "/lvp-flooring", description: "100% waterproof luxury vinyl plank. Pet-friendly, kid-friendly, and budget-friendly.", icon: "🏠" },
-  { label: "Hardwood Flooring", href: "/hardwood-flooring", description: "Unfinished Red Oak solid hardwood in 4 widths. Locally sourced, refinishable, built to last.", icon: "🌲" },
+  { label: "Cabinets", href: "/cabinets", description: "Mercury White Full Overlay Shaker cabinets. Plywood box, soft-close hinges, in a full range of sizes.", icon: "🪵", image: "" },
+  { label: "Countertops", href: "/countertops", description: "Quartz countertops fabricated to your exact measurements. Sink cutout included.", icon: "◻️", image: "" },
+  { label: "LVP Flooring", href: "/lvp-flooring", description: "100% waterproof luxury vinyl plank. 4 collections, pet-friendly, kid-friendly, budget-friendly.", icon: "🏠", image: "" },
+  { label: "Hardwood Flooring", href: "/hardwood-flooring", description: "Unfinished Red Oak solid hardwood in 4 widths. Refinishable and built to last.", icon: "🌲", image: "/images/hardwood/hardwood-room-hero.webp" },
 ];
 
 const valuePillars = [
@@ -56,11 +56,26 @@ export default async function HomePage() {
           <h2 className="text-2xl font-bold text-center text-[var(--color-text)] mb-10">Browse by Category</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {categories.map((cat) => (
-              <Link key={cat.href} href={cat.href} className="group block bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md hover:border-[var(--color-brand-green)] transition-all">
-                <div className="text-4xl mb-3">{cat.icon}</div>
-                <h3 className="font-semibold text-[var(--color-text)] text-lg group-hover:text-[var(--color-brand-dark)] transition-colors">{cat.label}</h3>
-                <p className="mt-2 text-sm text-[var(--color-muted)] leading-relaxed">{cat.description}</p>
-                <span className="mt-4 inline-block text-sm font-medium text-[var(--color-brand-green)]">Browse {cat.label} →</span>
+              <Link key={cat.href} href={cat.href} className="group block bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md hover:border-[var(--color-brand-green)] transition-all">
+                {cat.image ? (
+                  <div className="relative h-36">
+                    <Image
+                      src={cat.image}
+                      alt={cat.label}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    />
+                    <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white to-transparent" />
+                  </div>
+                ) : (
+                  <div className="px-6 pt-6 text-4xl">{cat.icon}</div>
+                )}
+                <div className={`relative z-10 px-6 pb-6 ${cat.image ? "-mt-4" : "mt-3"}`}>
+                  <h3 className="font-semibold text-[var(--color-text)] text-lg group-hover:text-[var(--color-brand-dark)] transition-colors">{cat.label}</h3>
+                  <p className="mt-2 text-sm text-[var(--color-muted)] leading-relaxed">{cat.description}</p>
+                  <span className="mt-4 inline-block text-sm font-medium text-[var(--color-brand-green)]">Browse {cat.label} →</span>
+                </div>
               </Link>
             ))}
           </div>

@@ -15,6 +15,10 @@ const company = [
   { label: "Build Your Project", href: "/project-builder" },
 ];
 
+const external = [
+  { label: "KOM USA", href: "https://kom-usa.com", description: "KOM family of services" },
+];
+
 export default async function Footer() {
   const settings = await getSiteSettings();
 
@@ -75,9 +79,24 @@ export default async function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-white/10 pt-6 text-xs text-white/40 space-y-1">
-          <p>Small orders are typically available immediately. For larger orders, contact us to confirm availability before ordering.</p>
-          <p>© {new Date().getFullYear()} KOM Building Materials. All rights reserved.</p>
+        <div className="mt-10 border-t border-white/10 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-white/40">
+          <div className="space-y-1">
+            <p>Small orders are typically available immediately. For larger orders, contact us to confirm availability before ordering.</p>
+            <p>© {new Date().getFullYear()} KOM Building Materials. All rights reserved.</p>
+          </div>
+          <div className="shrink-0">
+            {external.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white/70 transition-colors"
+              >
+                {link.label} ↗
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </footer>

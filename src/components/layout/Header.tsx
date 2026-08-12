@@ -57,6 +57,14 @@ export default function Header({ announcement }: { announcement?: string }) {
                   {link.label}
                 </Link>
               ))}
+              <a
+                href="https://kom-usa.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-2 px-3 py-1.5 rounded border border-[var(--color-brand-dark)] text-xs font-semibold text-[var(--color-brand-dark)] hover:bg-[var(--color-brand-dark)] hover:text-white transition-colors"
+              >
+                KOM USA ↗
+              </a>
             </nav>
 
             {/* CTA + mobile toggle */}
@@ -111,6 +119,14 @@ export default function Header({ announcement }: { announcement?: string }) {
             >
               Build Your Project
             </Link>
+            <a
+              href="https://kom-usa.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 block text-center rounded border border-[var(--color-brand-dark)] px-4 py-2.5 text-sm font-semibold text-[var(--color-brand-dark)] hover:bg-black/10 transition-colors"
+            >
+              KOM USA ↗
+            </a>
           </div>
         )}
       </div>
