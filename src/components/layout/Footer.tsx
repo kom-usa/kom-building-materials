@@ -75,8 +75,9 @@ export default async function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-white/10 pt-6 text-xs text-white/40">
-          © {new Date().getFullYear()} KOM Building Materials. All rights reserved.
+        <div className="mt-10 border-t border-white/10 pt-6 text-xs text-white/40 space-y-1">
+          <p>Small orders are typically available immediately. For larger orders, contact us to confirm availability before ordering.</p>
+          <p>© {new Date().getFullYear()} KOM Building Materials. All rights reserved.</p>
         </div>
       </div>
     </footer>

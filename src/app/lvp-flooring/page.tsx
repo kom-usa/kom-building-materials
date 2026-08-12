@@ -33,7 +33,7 @@ export default function LvpFlooringPage() {
           <p className="mt-4 text-white/80 text-base leading-relaxed max-w-2xl">
             Luxury Vinyl Plank is completely waterproof, looks like real wood, and installs over most
             existing floors without tearing anything out. We carry 4 collections — New Mountain, NASA,
-            Planet, and Roman — all in stock at our Redford Township showroom.
+            Planet, and Roman — available at our Redford Township showroom.
           </p>
           <Link
             href="/project-builder"
@@ -70,13 +70,11 @@ export default function LvpFlooringPage() {
                 <p className="mt-2 text-xs text-[var(--color-muted)]">{product.dimensions}</p>
                 {product.notes && <p className="mt-1 text-xs text-[var(--color-muted)] italic">{product.notes}</p>}
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="text-lg font-bold text-[var(--color-brand-green)]">
+                  <span className="text-lg font-bold text-[var(--color-text)]">
                     ${product.price.toFixed(2)}
                     <span className="text-xs font-normal text-[var(--color-muted)] ml-1">/ sqft</span>
                   </span>
-                  <span className="text-xs font-medium px-2 py-1 rounded-full bg-green-50 text-green-700">In Stock</span>
                 </div>
-                <p className="mt-1 text-xs text-[var(--color-muted)]">{product.leadTime}</p>
               </div>
             ))}
           </div>
@@ -120,11 +118,10 @@ export default function LvpFlooringPage() {
                 )}
               </div>
               <div className="text-left sm:text-right shrink-0">
-                <span className="text-2xl font-bold text-[var(--color-brand-green)]">
+                <span className="text-2xl font-bold text-[var(--color-text)]">
                   ${collection.price.toFixed(2)}
                 </span>
                 <span className="text-sm text-[var(--color-muted)] ml-1">/ sqft</span>
-                <p className="text-xs text-[var(--color-muted)] mt-0.5">In stock — take home today</p>
               </div>
             </div>
 

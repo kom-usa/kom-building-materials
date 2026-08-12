@@ -248,12 +248,12 @@ export default function ProjectEstimator({ lvpProducts, hardwoodProducts, cabine
                 {cabinetGroups.map((group: CabinetGroup) => (
                   <div key={group.group} className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
                     {/* Group header */}
+                    {group.image && (
+                      <div className="relative w-full aspect-[16/7] bg-gray-50">
+                        <Image src={group.image} alt={group.group} fill className="object-contain p-3" sizes="(max-width: 1024px) 100vw, 600px" />
+                      </div>
+                    )}
                     <div className="flex items-center gap-3 p-3 border-b border-gray-50 bg-gray-50/50">
-                      {group.image && (
-                        <div className="relative w-10 h-10 rounded bg-white border border-gray-100 shrink-0 overflow-hidden">
-                          <Image src={group.image} alt={group.group} fill className="object-contain p-1" sizes="40px" />
-                        </div>
-                      )}
                       <p className="font-semibold text-sm text-[var(--color-text)]">{group.group}</p>
                     </div>
 
@@ -410,7 +410,7 @@ export default function ProjectEstimator({ lvpProducts, hardwoodProducts, cabine
             <div className="px-4 py-4 border-t border-gray-100 bg-gray-50/50">
               <div className="flex justify-between items-center mb-1">
                 <span className="text-sm font-semibold text-[var(--color-text)]">Est. Total</span>
-                <span className="text-lg font-bold text-[var(--color-brand-green)]">
+                <span className="text-lg font-bold text-[var(--color-text)]">
                   ${cartTotal.toLocaleString()}
                 </span>
               </div>
@@ -442,7 +442,7 @@ export default function ProjectEstimator({ lvpProducts, hardwoodProducts, cabine
         <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 shadow-lg px-4 py-3 flex items-center justify-between lg:hidden z-50">
           <div>
             <p className="text-xs text-[var(--color-muted)]">{cartCount} item{cartCount !== 1 ? "s" : ""}</p>
-            <p className="text-sm font-bold text-[var(--color-brand-green)]">${cartTotal.toLocaleString()} est.</p>
+            <p className="text-sm font-bold text-[var(--color-text)]">${cartTotal.toLocaleString()} est.</p>
           </div>
           <button
             onClick={handleRequestQuote}

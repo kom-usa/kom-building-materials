@@ -117,7 +117,7 @@ export default function CabinetsPage() {
             </Link>
             <Link
               href="/contact"
-              className="inline-block rounded border border-white/40 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
+              className="inline-block rounded bg-white px-6 py-3 text-sm font-semibold text-[var(--color-brand-green)] hover:bg-gray-100 transition-colors"
             >
               Request Pricing
             </Link>
@@ -148,7 +148,7 @@ export default function CabinetsPage() {
               <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
                 <div>
                   <h2 className="text-2xl font-bold text-[var(--color-text)]">{section}</h2>
-                  <p className="text-sm text-[var(--color-muted)] mt-1">Mercury White · Full Overlay Shaker · In Stock</p>
+                  <p className="text-sm text-[var(--color-muted)] mt-1">Mercury White · Full Overlay Shaker</p>
                 </div>
                 <Link
                   href="/project-builder"

@@ -43,7 +43,6 @@ const roomPhotos = [
   { src: "/images/hardwood/hardwood-room-hero.webp", alt: "Red Oak hardwood in living room" },
   { src: "/images/hardwood/hardwood-room-2.webp",   alt: "Red Oak hardwood room view" },
   { src: "/images/hardwood/hardwood-room-3.webp",   alt: "Red Oak hardwood installed" },
-  { src: "/images/hardwood/hardwood-layout-2.webp", alt: "Red Oak hardwood plank layout" },
 ];
 
 const whyHardwood = [
@@ -62,7 +61,7 @@ export default function HardwoodFlooringPage() {
           <p className="text-sm text-[var(--color-brand-dark)] font-semibold mb-2">Products</p>
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Hardwood Flooring</h1>
           <p className="mt-4 text-white/80 text-base leading-relaxed max-w-2xl">
-            We carry unfinished Red Oak Select Grade solid hardwood in four widths — all in stock.
+            We carry unfinished Red Oak Select Grade solid hardwood in four widths.
             Unfinished means you control the final stain color after installation. Pallet pricing available
             for larger orders.
           </p>
@@ -97,7 +96,7 @@ export default function HardwoodFlooringPage() {
               <p className="text-xs text-[var(--color-muted)] mt-0.5">All widths are the same price. Choose the width that suits your room.</p>
             </div>
             <div className="text-right shrink-0">
-              <span className="text-2xl font-bold text-[var(--color-brand-green)]">$3.59</span>
+              <span className="text-2xl font-bold text-[var(--color-text)]">$3.59</span>
               <span className="text-sm text-[var(--color-muted)] ml-1">/ sqft</span>
             </div>
           </div>
@@ -119,7 +118,7 @@ export default function HardwoodFlooringPage() {
                   <p className="mt-1 text-sm text-[var(--color-muted)] leading-snug">{w.description}</p>
                   <p className="mt-2 text-xs font-medium text-[var(--color-brand-green)]">{w.best}</p>
                   <div className="mt-auto pt-3">
-                    <span className="text-xs font-medium px-2 py-1 rounded-full bg-green-50 text-green-700">In Stock</span>
+                    <span className="text-xs text-[var(--color-muted)]">Call for availability</span>
                   </div>
                 </div>
               </div>
@@ -172,7 +171,7 @@ export default function HardwoodFlooringPage() {
               <p className="mt-2 text-sm text-[var(--color-muted)] leading-relaxed">
                 Required when reversing the direction of nail-down hardwood installation. Sold by the linear foot.
               </p>
-              <p className="mt-3 text-lg font-bold text-[var(--color-brand-green)]">
+              <p className="mt-3 text-lg font-bold text-[var(--color-text)]">
                 $1.00 <span className="text-xs font-normal text-[var(--color-muted)]">/ linear ft</span>
               </p>
             </div>

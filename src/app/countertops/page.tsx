@@ -68,12 +68,9 @@ export default function CountertopsPage() {
                   </p>
                   <p className="mt-3 text-xs text-[var(--color-muted)] italic">{product.notes}</p>
                   <div className="mt-4 flex items-center justify-between">
-                    <span className="text-lg font-bold text-[var(--color-brand-green)]">
+                    <span className="text-lg font-bold text-[var(--color-text)]">
                       ${product.price}
                       <span className="text-xs font-normal text-[var(--color-muted)] ml-1">/ sqft</span>
-                    </span>
-                    <span className="text-xs font-medium px-2 py-1 rounded-full bg-green-50 text-green-700">
-                      In Stock
                     </span>
                   </div>
                 </div>
