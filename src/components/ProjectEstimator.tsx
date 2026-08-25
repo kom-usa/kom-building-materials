@@ -127,7 +127,7 @@ export default function ProjectEstimator({ lvpProducts, hardwoodProducts, cabine
       <div className="flex flex-col lg:flex-row gap-8 items-start">
 
         {/* ── Left: Product browser ── */}
-        <div className="flex-1 min-w-0">
+        <div className="w-full flex-1 min-w-0">
 
           {/* Category tabs */}
           <div className="grid grid-cols-4 gap-1 mb-6 sm:flex sm:pb-1 sm:border-b sm:border-gray-100">
