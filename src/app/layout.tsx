@@ -13,11 +13,11 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: {
-    default: "KOM Building Materials — Cabinets, Countertops & Flooring in Metro Detroit",
+    default: "KOM Building Materials â Cabinets, Countertops & Flooring in Metro Detroit",
     template: "%s | KOM Building Materials",
   },
   description:
-    "Visit our Redford Township showroom or browse online. Cabinets, countertops, LVP and hardwood flooring — expert guidance, competitive prices, veteran-owned.",
+    "Visit our Redford Township showroom or browse online. Cabinets, countertops, LVP and hardwood flooring â expert guidance, competitive prices, veteran-owned.",
   metadataBase: new URL("https://screwthemiddleman.com"),
 };
 
@@ -31,7 +31,12 @@ export default async function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased bg-[var(--color-background)]">
-        <Header announcement={settings?.announcementBar} />
+        <Header
+          announcement={
+            settings?.announcementBar ||
+              "New Garden City showroom coming soon — Redford Township open now."
+          }
+        />
         <main className="flex-1">{children}</main>
         <Footer />
         <SanityLive />

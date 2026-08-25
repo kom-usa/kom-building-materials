@@ -5,7 +5,7 @@ export default async function ContactPage() {
   const settings = await getSiteSettings();
 
   const phone = settings?.phone || "(313) 559-1888";
-  const email = settings?.email || "Jordan@KOM-USA.com";
+  const email = settings?.email || "BuildingMaterials@KOM-USA.com";
   const address = settings?.address || "15497 Beech Daly Road\nRedford Township, MI 48239";
   const hours: { days: string; hours: string }[] = settings?.showroomHours || [];
 
@@ -30,6 +30,9 @@ export default async function ContactPage() {
               <div>
                 <dt className="font-semibold text-[var(--color-brand-dark)]">Address</dt>
                 <dd className="mt-1 text-[var(--color-muted)] whitespace-pre-line">{address}</dd>
+                <dd className="mt-2 inline-block rounded bg-[var(--color-brand-green)]/10 px-2.5 py-1 text-xs font-semibold text-[var(--color-brand-dark)]">
+                  New Garden City showroom coming soon
+                </dd>
               </div>
               <div>
                 <dt className="font-semibold text-[var(--color-brand-dark)]">Phone</dt>

@@ -110,10 +110,10 @@ export default function ProjectEstimator({ lvpProducts, hardwoodProducts, cabine
 
   // --- Tab nav ---
   const tabs = [
-    { key: "cabinets",     label: "Cabinets" },
-    { key: "lvp",          label: "LVP Flooring" },
-    { key: "hardwood",     label: "Hardwood" },
-    { key: "countertops",  label: "Countertops" },
+    { key: "cabinets",     label: "Cabinets",     short: "Cabinets" },
+    { key: "lvp",          label: "LVP Flooring", short: "LVP" },
+    { key: "hardwood",     label: "Hardwood",     short: "Hardwood" },
+    { key: "countertops",  label: "Countertops",  short: "Countertops" },
   ] as const;
 
   // --- Cabinet groups for active section ---
@@ -130,18 +130,19 @@ export default function ProjectEstimator({ lvpProducts, hardwoodProducts, cabine
         <div className="flex-1 min-w-0">
 
           {/* Category tabs */}
-          <div className="flex gap-1 mb-6 overflow-x-auto pb-1 border-b border-gray-100">
+          <div className="grid grid-cols-4 gap-1 mb-6 sm:flex sm:pb-1 sm:border-b sm:border-gray-100">
             {tabs.map((tab) => (
               <button
                 key={tab.key}
                 onClick={() => setActiveTab(tab.key)}
-                className={`px-4 py-2 text-sm font-medium rounded-t whitespace-nowrap transition-colors ${
+                className={`px-1 py-2 text-xs font-medium rounded text-center whitespace-nowrap sm:px-4 sm:text-sm sm:rounded-b-none transition-colors ${
                   activeTab === tab.key
                     ? "bg-[var(--color-brand-green)] text-white"
-                    : "text-[var(--color-muted)] hover:text-[var(--color-text)]"
+                    : "bg-gray-100 text-[var(--color-muted)] hover:text-[var(--color-text)] sm:bg-transparent"
                 }`}
               >
-                {tab.label}
+                <span className="sm:hidden">{tab.short}</span>
+                <span className="hidden sm:inline">{tab.label}</span>
               </button>
             ))}
           </div>

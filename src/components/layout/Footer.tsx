@@ -23,7 +23,7 @@ export default async function Footer() {
   const settings = await getSiteSettings();
 
   const phone = settings?.phone || "(313) 559-1888";
-  const email = settings?.email || "Jordan@KOM-USA.com";
+  const email = settings?.email || "BuildingMaterials@KOM-USA.com";
   const address: string = settings?.address || "15497 Beech Daly Road\nRedford Township, MI 48239";
   const hours: { days: string; hours: string }[] = settings?.showroomHours || [];
 
