@@ -5,7 +5,7 @@ import { getAboutPage } from "@/sanity/lib/queries";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "KOM Building Materials is a Service-Disabled Veteran-Owned showroom in Redford Township, MI. Professional guidance, premium products, no middleman markup.",
+    "KOM Building Materials is a Service-Disabled Veteran-Owned showroom in Redford Township, MI. Professional guidance, premium products, competitive prices.",
 };
 
 const defaultValues = [

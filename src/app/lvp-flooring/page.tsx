@@ -63,17 +63,34 @@ export default function LvpFlooringPage() {
           <p className="text-sm text-[var(--color-muted)] mb-8">Best for rental properties, commercial spaces, and budget-conscious projects.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
             {entryLevel.map((product) => (
-              <div key={product.sku} className="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
-                <p className="text-xs text-[var(--color-muted)] font-mono mb-1">{product.sku}</p>
-                <h3 className="font-semibold text-[var(--color-text)]">{product.name}</h3>
-                <p className="mt-2 text-sm text-[var(--color-muted)] leading-relaxed">{product.description}</p>
-                <p className="mt-2 text-xs text-[var(--color-muted)]">{product.dimensions}</p>
-                {product.notes && <p className="mt-1 text-xs text-[var(--color-muted)] italic">{product.notes}</p>}
-                <div className="mt-4 flex items-center justify-between">
-                  <span className="text-lg font-bold text-[var(--color-text)]">
-                    ${product.price.toFixed(2)}
-                    <span className="text-xs font-normal text-[var(--color-muted)] ml-1">/ sqft</span>
-                  </span>
+              <div key={product.sku} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                <div className="relative aspect-[16/7] bg-gray-100">
+                  {product.image ? (
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, 50vw"
+                    />
+                  ) : (
+                    <div className="h-full flex items-center justify-center text-gray-300 text-sm">
+                      Photo coming soon
+                    </div>
+                  )}
+                </div>
+                <div className="p-5">
+                  <p className="text-xs text-[var(--color-muted)] font-mono mb-1">{product.sku}</p>
+                  <h3 className="font-semibold text-[var(--color-text)]">{product.name}</h3>
+                  <p className="mt-2 text-sm text-[var(--color-muted)] leading-relaxed">{product.description}</p>
+                  <p className="mt-2 text-xs text-[var(--color-muted)]">{product.dimensions}</p>
+                  {product.notes && <p className="mt-1 text-xs text-[var(--color-muted)] italic">{product.notes}</p>}
+                  <div className="mt-4 flex items-center justify-between">
+                    <span className="text-lg font-bold text-[var(--color-text)]">
+                      ${product.price.toFixed(2)}
+                      <span className="text-xs font-normal text-[var(--color-muted)] ml-1">/ sqft</span>
+                    </span>
+                  </div>
                 </div>
               </div>
             ))}

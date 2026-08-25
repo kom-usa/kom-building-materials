@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import type { Product } from "@/types/product";
 import countertopsData from "@/data/countertops.json";
 
@@ -58,8 +59,20 @@ export default function CountertopsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {countertops.map((product) => (
               <div key={product.sku} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                <div className="h-48 bg-gray-100 flex items-center justify-center text-gray-300 text-sm">
-                  Photo coming soon
+                <div className="relative h-48 bg-gray-100">
+                  {product.image ? (
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  ) : (
+                    <div className="h-full flex items-center justify-center text-gray-300 text-sm">
+                      Photo coming soon
+                    </div>
+                  )}
                 </div>
                 <div className="p-5">
                   <h3 className="font-semibold text-[var(--color-text)]">{product.name}</h3>
