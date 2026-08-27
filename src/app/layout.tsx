@@ -13,11 +13,11 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: {
-    default: "KOM Building Materials â Cabinets, Countertops & Flooring in Metro Detroit",
+    default: "KOM Building Materials — Cabinets, Countertops & Flooring in Metro Detroit",
     template: "%s | KOM Building Materials",
   },
   description:
-    "Visit our Redford Township showroom or browse online. Cabinets, countertops, LVP and hardwood flooring â expert guidance, competitive prices, veteran-owned.",
+    "Visit our Redford Township showroom or browse online. Cabinets, countertops, LVP and hardwood flooring — expert guidance, competitive prices, veteran-owned.",
   metadataBase: new URL("https://screwthemiddleman.com"),
 };
 
