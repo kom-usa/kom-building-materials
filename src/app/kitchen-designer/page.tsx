@@ -14,25 +14,26 @@ export const metadata: Metadata = {
 /**
  * The one KOM-owned address for Jordan's 3D kitchen designer.
  *
- * **Why a hop rather than linking at the designer directly.** It currently
- * lives on a ChatGPT Site under a personal account — the URL carries somebody's
- * handle and KOM does not control it. The intended home is a Site owned by the
- * KOM Business workspace, which will be a different URL again. Every link this
- * site publishes points here, and this file is the single place the real
- * destination is named.
+ * **Why a hop rather than linking at the planner directly.** It lives on a
+ * ChatGPT Site, on a host this repo does not control, and it has already moved
+ * once — from a personal account to the KOM workspace, within a day. Every link
+ * this site publishes points here, and this file is the single place the real
+ * destination is named, so the next move costs one line.
  *
  * ⚠️ **A temporary redirect, never a permanent one.** `redirect()` issues 307.
  * A 301 would be cached by browsers indefinitely and would strand customers on
  * a personal account's URL long after it had been replaced.
  *
- * ✅ **Michael approved publication on 11 Sep.**
- * ⚠️ **Jordan has not made the Site public yet**, so `KITCHEN_DESIGNER.url` is
- * null and this page serves the coming-soon panel rather than redirecting.
+ * ✅ **Live since 11 Sep**, on the **KOM workspace** Site rather than the
+ * personal account everyone planned around — `kom-usa-0158.chatgpt.site`.
+ * Verified by three signed-out requests returning 200.
  *
- * ⚠️ **This page cannot tell whether the designer is reachable**, only whether
- * a URL is configured. A signed-out request returned 401 on 11 Sep; a URL
- * filled in before publication would fail on the far side of this hop, on an
- * OpenAI "Sign in required" page, where the customer has already committed.
+ * ⚠️ **This page cannot tell whether the planner is reachable**, only whether a
+ * URL is configured. The personal Site was returning 401 minutes before the
+ * workspace one went live, and a URL filled in at that moment would have failed
+ * on the far side of this hop, on an OpenAI "Sign in required" page, where the
+ * customer has already committed to the click. **Check any new URL signed out
+ * before putting it in `data/designer.ts`.**
  *
  * The twin of this page lives in `kom-usa-platform`. Two sites, same pattern,
  * because the same designer serves both.
