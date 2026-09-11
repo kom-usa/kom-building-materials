@@ -25,9 +25,14 @@ export const metadata: Metadata = {
  * A 301 would be cached by browsers indefinitely and would strand customers on
  * a personal account's URL long after it had been replaced.
  *
+ * ✅ **Michael approved publication on 11 Sep.**
+ * ⚠️ **Jordan has not made the Site public yet**, so `KITCHEN_DESIGNER.url` is
+ * null and this page serves the coming-soon panel rather than redirecting.
+ *
  * ⚠️ **This page cannot tell whether the designer is reachable**, only whether
- * a URL is configured. A request from outside returned 401 on 11 Sep; a
- * configured URL that nobody published still fails, on the far side of this hop.
+ * a URL is configured. A signed-out request returned 401 on 11 Sep; a URL
+ * filled in before publication would fail on the far side of this hop, on an
+ * OpenAI "Sign in required" page, where the customer has already committed.
  *
  * The twin of this page lives in `kom-usa-platform`. Two sites, same pattern,
  * because the same designer serves both.
@@ -63,7 +68,7 @@ export default function Page() {
           <p className="mt-3 max-w-2xl text-base leading-relaxed opacity-80">
             It lets you lay out cabinets, counters and appliances and see the
             materials priced as you go. Until it opens, build your estimate from
-            the product list — same catalog, same quote request.
+            the product list and send it to us for an official quote.
           </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <Link

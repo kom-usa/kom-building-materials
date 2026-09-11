@@ -18,10 +18,10 @@
  * thing to keep an eye on**: a lead that arrives through the designer does not
  * currently land where a `/project-builder` lead lands.
  *
- * ⚠️ **`url` is null because the Site is not public yet.** Michael approved
- * public access on 11 Sep, but approval is not publication — a request from
- * outside returned **401** on 11 Sep, so only its owner can open it. Jordan has
- * to publish it.
+ * ✅ **Michael approved publication on 11 Sep.**
+ * ⚠️ **Jordan has not made the Site public yet.** He said he would do it that
+ * evening. A signed-out request returned **401, `Sign in required`**, on 11 Sep.
+ * Approval is not publication, and only the Site's owner can publish it.
  *
  * The destination once he does:
  * `https://screw-middleman-kitchen-designer.jpetrovich290.chatgpt.site`
@@ -33,20 +33,36 @@
  * than at the Site: when it moves, one line changes and every link already in
  * the wild keeps working.
  *
- * **Nothing renders while this is null.** A button that fails after the click,
- * where the customer has already committed, is worse than no button.
+ * **The block renders whether or not the designer is reachable.** With no URL
+ * set it leads to our own `/kitchen-designer` coming-soon page, which says what
+ * is coming and points at the estimator that works today. Hiding it would mean
+ * nobody learns the tool exists, and would make publication a code change
+ * rather than a value change.
  */
 export const KITCHEN_DESIGNER = {
-  /** Public URL of the designer. Null until the Site is actually public. */
+  /**
+   * Public URL of the designer, or null while it is unavailable.
+   *
+   * ⚠️ **Null is a supported state, not a broken one.** The block still renders
+   * and `/kitchen-designer` serves the coming-soon page instead of redirecting.
+   * Replacing null with the verified public URL is the whole change: the same
+   * route then issues a 307 and nothing else moves.
+   *
+   * ⚠️ **Only ever a URL that has been checked signed-out.** A private Site
+   * returns an OpenAI "Sign in required" page, and sending a customer there is
+   * strictly worse than telling them it is coming.
+   */
   url: null as string | null,
 
-  heading: "Prefer to see it in 3D?",
-  body: "Lay out your kitchen — cabinets, counters and appliances — and see the materials priced as you go. The estimator below is faster if you already know what you want.",
-  button: "Open the 3D kitchen designer",
-  note: "An estimate for materials, not a quote for the finished job.",
-} as const;
+  heading: "Plan your kitchen in 3D",
+  body: "Build a kitchen layout, choose materials, and see an estimated material cost before you request a full project quote.",
+  button: "Start the 3D kitchen estimator",
 
-/** Whether the designer is ready to be offered to customers. */
-export function designerIsLive(): boolean {
-  return KITCHEN_DESIGNER.url !== null;
-}
+  /*
+   * ⚠️ **Nothing here may claim a design is sent to us.** Where the designer's
+   * quote requests land is unresolved — they are written to its own database
+   * and only forwarded if a webhook is configured. The Project Estimator below
+   * it does deliver; the designer's path is KOM's to finish first.
+   */
+  note: "Material estimate only. Labor and installation are quoted separately.",
+} as const;
