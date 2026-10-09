@@ -24,9 +24,9 @@ export const metadata: Metadata = {
  * A 301 would be cached by browsers indefinitely and would strand customers on
  * a personal account's URL long after it had been replaced.
  *
- * ✅ **Live since 11 Sep**, on the **KOM workspace** Site rather than the
- * personal account everyone planned around — `kom-usa-0158.chatgpt.site`.
- * Verified by three signed-out requests returning 200.
+ * ✅ **Points at designer.kom-usa.com since 9 Oct** (KOM's Cloudflare, T53),
+ * as kom-usa.com/kitchen-designer does. From 11 Sep to 9 Oct it pointed at the
+ * KOM workspace ChatGPT Site (`kom-usa-0158.chatgpt.site`), which ends 28 Oct.
  *
  * ⚠️ **This page cannot tell whether the planner is reachable**, only whether a
  * URL is configured. The personal Site was returning 401 minutes before the

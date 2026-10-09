@@ -2,11 +2,14 @@
  * The 3D kitchen planner, and how screwthemiddleman.com points at it.
  *
  * Jordan built it — `kom-usa/KOM-3D-Kitchen-Designer`. It is **not** a Next app
- * this repo can host: the toolchain is `vinext` with an `.openai/hosting.json`
- * binding a D1 `DB`, so it runs as a ChatGPT Site. Porting it onto this stack
- * is a rebuild, not a deploy, and that is a later decision.
+ * this repo can host, so this site only points at it.
  *
- * ✅ **LIVE since 11 Sep**, and on the **KOM workspace** rather than the personal
+ * ✅ **On KOM's Cloudflare at designer.kom-usa.com since 1 Oct** (T53), the same
+ * place kom-usa.com/kitchen-designer points. Moved here 9 Oct: the old ChatGPT
+ * Site copy below ends with the ChatGPT workspace on 28 Oct. Checked signed out:
+ * 200 with the title `KOM 3D Kitchen & Material Designer`.
+ *
+ * History: **LIVE from 11 Sep to 9 Oct** on the **KOM workspace** ChatGPT Site rather than the personal
  * account everyone planned around: `kom-usa-0158.chatgpt.site`, not
  * `jpetrovich290.chatgpt.site`. Michael approved publication and Jordan
  * published it. Verified by three signed-out requests returning 200 with the
@@ -44,7 +47,7 @@ export const KITCHEN_DESIGNER = {
    * returns an OpenAI "Sign in required" page, and sending a customer there is
    * strictly worse than telling them it is coming.
    */
-  url: "https://kom-3d-kitchen-designer.kom-usa-0158.chatgpt.site/" as string | null,
+  url: "https://designer.kom-usa.com/" as string | null,
 
   /**
    * The hub card. Two states, one for each side of `url`.
