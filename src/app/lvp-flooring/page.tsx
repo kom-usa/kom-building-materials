@@ -86,10 +86,15 @@ export default function LvpFlooringPage() {
                   <p className="mt-2 text-xs text-[var(--color-muted)]">{product.dimensions}</p>
                   {product.notes && <p className="mt-1 text-xs text-[var(--color-muted)] italic">{product.notes}</p>}
                   <div className="mt-4 flex items-center justify-between">
-                    <span className="text-lg font-bold text-[var(--color-text)]">
-                      ${product.price.toFixed(2)}
-                      <span className="text-xs font-normal text-[var(--color-muted)] ml-1">/ sqft</span>
-                    </span>
+                    {/* A price of 0 means none is published yet (T173: Orlando Glue Down, Jordan 19 Oct). */}
+                    {product.price > 0 ? (
+                      <span className="text-lg font-bold text-[var(--color-text)]">
+                        ${product.price.toFixed(2)}
+                        <span className="text-xs font-normal text-[var(--color-muted)] ml-1">/ sqft</span>
+                      </span>
+                    ) : (
+                      <Link href="/contact" className="text-sm font-semibold text-[var(--color-brand-green)] hover:underline">Contact us for pricing</Link>
+                    )}
                   </div>
                 </div>
               </div>
