@@ -203,7 +203,7 @@
       {
         "section": "Accessories",
         "group": "Trash Pull-Out",
-        "image": "",
+        "image": "/images/cabinets/trash-pull-out.webp",
         "items": [
           { "sku": "B18TR", "dimensions": "18\"W × 34.5\"H × 24\"D", "price": 150 },
           { "sku": "B21TR", "dimensions": "21\"W × 34.5\"H × 24\"D", "price": 155 }
@@ -212,7 +212,7 @@
       {
         "section": "Accessories",
         "group": "Fillers",
-        "image": "",
+        "image": "/images/cabinets/fillers.webp",
         "items": [
           { "sku": "SF330", "dimensions": "3\"W × 30\"H — Straight Filler", "price": 25 },
           { "sku": "SF334", "dimensions": "3\"W × 34.5\"H — Straight Filler", "price": 30 },
@@ -228,7 +228,7 @@
       {
         "section": "Accessories",
         "group": "Toe Kick",
-        "image": "",
+        "image": "/images/cabinets/toe-kick.webp",
         "items": [
           { "sku": "TK96", "dimensions": "1/4\"T × 96\"L × 4.5\"H", "price": 25 }
         ]
@@ -236,7 +236,7 @@
       {
         "section": "Accessories",
         "group": "Refrigerator Panel",
-        "image": "",
+        "image": "/images/cabinets/refrigerator-panel.webp",
         "items": [
           { "sku": "REFPNL24", "dimensions": "24\"D × 96\"H × 3/4\" thick", "price": 125 }
         ]
@@ -244,7 +244,7 @@
       {
         "section": "Accessories",
         "group": "End Panels",
-        "image": "",
+        "image": "/images/cabinets/end-panels.webp",
         "items": [
           { "sku": "WEP1230", "dimensions": "12\"W × 30\"H — Wall End Panel", "price": 75 },
           { "sku": "WEP1236", "dimensions": "12\"W × 36\"H — Wall End Panel", "price": 85 },
@@ -255,7 +255,7 @@
       {
         "section": "Specialty Cabinets",
         "group": "Oven Cabinets",
-        "image": "",
+        "image": "/images/cabinets/oven-cabinet.webp",
         "items": [
           { "sku": "OC3084", "dimensions": "30\"W × 84\"H × 24\"D", "price": 830 },
           { "sku": "OC3090", "dimensions": "30\"W × 90\"H × 24\"D", "price": 860 },
@@ -268,7 +268,7 @@
       {
         "section": "Specialty Cabinets",
         "group": "Microwave Cabinet",
-        "image": "",
+        "image": "/images/cabinets/microwave-cabinet.webp",
         "items": [
           { "sku": "MC3018", "dimensions": "30\"W × 18\"H × 18\"D", "price": 135 }
         ]
@@ -276,7 +276,7 @@
       {
         "section": "Specialty Cabinets",
         "group": "Lazy Susan",
-        "image": "",
+        "image": "/images/cabinets/lazy-susan.webp",
         "items": [
           { "sku": "LS33", "dimensions": "33\" × 33\" × 24\"D — Cabinet", "price": 345 },
           { "sku": "LS36", "dimensions": "36\" × 36\" × 24\"D — Cabinet", "price": 380 },
@@ -287,7 +287,7 @@
       {
         "section": "Specialty Cabinets",
         "group": "Diagonal Sink Base",
-        "image": "",
+        "image": "/images/cabinets/diagonal-sink-base.webp",
         "items": [
           { "sku": "DSNK36", "dimensions": "36\"W × 34.5\"H × 24\"D", "price": 325 },
           { "sku": "DSNK42", "dimensions": "42\"W × 34.5\"H × 24\"D", "price": 370 }
@@ -296,7 +296,7 @@
       {
         "section": "Specialty Cabinets",
         "group": "Wall Blind Corner",
-        "image": "",
+        "image": "/images/cabinets/wall-blind-corner.webp",
         "items": [
           { "sku": "WBC2430", "dimensions": "24\"W × 30\"H × 12\"D", "price": 195 },
           { "sku": "WBC2436", "dimensions": "24\"W × 36\"H × 12\"D", "price": 220 },
@@ -306,7 +306,7 @@
       {
         "section": "Vanity Cabinets",
         "group": "Vanity Base",
-        "image": "",
+        "image": "/images/cabinets/vanity-base.webp",
         "items": [
           { "sku": "VB12", "dimensions": "12\"W × 34.5\"H × 21\"D", "price": 275 },
           { "sku": "VB15", "dimensions": "15\"W × 34.5\"H × 21\"D", "price": 290 },
@@ -318,7 +318,7 @@
       {
         "section": "Vanity Cabinets",
         "group": "Vanity Combination",
-        "image": "",
+        "image": "/images/cabinets/vanity-combination.webp",
         "items": [
           { "sku": "VC30", "dimensions": "30\"W × 34.5\"H × 21\"D", "price": 325 },
           { "sku": "VC36", "dimensions": "36\"W × 34.5\"H × 21\"D", "price": 360 },
