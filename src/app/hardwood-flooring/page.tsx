@@ -41,7 +41,6 @@ const widths = [
 
 const roomPhotos = [
   { src: "/images/hardwood/hardwood-room-hero.webp", alt: "Red Oak hardwood in living room" },
-  { src: "/images/hardwood/hardwood-room-2.webp",   alt: "Red Oak hardwood room view" },
   { src: "/images/hardwood/hardwood-room-3.webp",   alt: "Red Oak hardwood installed" },
 ];
 
@@ -136,26 +135,6 @@ export default function HardwoodFlooringPage() {
         </div>
       </section>
 
-      {/* Room photos */}
-      <section className="py-14 px-4 bg-white">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="text-xl font-bold text-[var(--color-text)] mb-8">See It Installed</h2>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {roomPhotos.map((photo) => (
-              <div key={photo.src} className="aspect-square relative rounded-xl overflow-hidden bg-gray-100">
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 50vw, 25vw"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Accessory */}
       <section className="py-10 px-4 bg-[var(--color-background)] border-t border-gray-100">
         <div className="mx-auto max-w-7xl">
@@ -180,6 +159,26 @@ export default function HardwoodFlooringPage() {
                 $1.00 <span className="text-xs font-normal text-[var(--color-muted)]">/ linear ft</span>
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Room photos */}
+      <section className="py-14 px-4 bg-white">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="text-xl font-bold text-[var(--color-text)] mb-8">See It Installed</h2>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {roomPhotos.map((photo) => (
+              <div key={photo.src} className="aspect-square relative rounded-xl overflow-hidden bg-gray-100">
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 50vw, 25vw"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>

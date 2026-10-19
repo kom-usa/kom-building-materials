@@ -203,7 +203,7 @@
       {
         "section": "Accessories",
         "group": "Trash Pull-Out",
-        "image": "",
+        "image": "/images/cabinets/b21tr.png",
         "items": [
           { "sku": "B18TR", "dimensions": "18\"W × 34.5\"H × 24\"D", "price": 150 },
           { "sku": "B21TR", "dimensions": "21\"W × 34.5\"H × 24\"D", "price": 155 }
